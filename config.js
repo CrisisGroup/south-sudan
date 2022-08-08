@@ -3,7 +3,7 @@ var config = {
     accessToken: 'pk.eyJ1IjoiZGFsdG9ud2IiLCJhIjoiOWdSSXFQSSJ9.HZyjh4g3TAAOAncwelv9Vw',
     showMarkers: false,
     markerColor: '#3FB1CE',
-    inset: true,
+    inset: false,
     theme: 'light',
     projection: 'globe',
     use3dTerrain: false,
@@ -26,7 +26,7 @@ var config = {
             bearing: 0
           },
           mapAnimation: 'flyTo',
-          rotateAnimation: false,
+          rotateAnimation: true,
           callback: '',
           onChapterEnter: [
 
@@ -37,13 +37,192 @@ var config = {
       },
         {
             id: '01',
+            alignment: 'full',
+            hidden: false,
+            title: '',
+            image: '',
+            description: '<div class="html-video-container"><video width="100%" height="100%" autoplay="" loop="" muted="">&gt;<source src="images/placeholder.mp4" type="video/mp4"></video></div>Catastrophic floods are pummeling South Sudan, submerging large swathes of the country and displacing hundreds of thousands.' + '<br /><br />' + 'Forecasts project a fourth straight year of floods after the rainy season, which has already begun, putting thousands of South Sudanese at the frontline of one of the world’s most invisible climate disasters.' + '<br /><br />' + 'This flooding has also helped drive conflict that has killed dozens (or hundreds?), hundreds of miles to the south.',
+            location: {
+              center: [31.03374, 7.20294],
+              zoom: 6.75,
+              pitch: 40.50,
+              bearing: 12
+            },
+            mapAnimation: 'flyTo',
+            rotateAnimation: false,
+            callback: '',
+            onChapterEnter: [
+
+            ],
+            onChapterExit: [
+
+          ]
+        },
+        {
+            id: '02',
+            alignment: 'center',
+            hidden: false,
+            title: '',
+            image: '',
+            description: '<h2 class="liftout">Crisis Group has tracked herders displaced by floods who later got caught up in violent attacks with the local communities. Many of these have been unable to return home until the floods recede further. Herders uprooted by three straight years of catastrophic flooding are clashing with populations in the country’s south, who are trying to force them to return home.  Heavily armed, the herders moved south from Jonglei, the epicenter of the Nile water floods, to the Equatoria region, where local communities have also formed armed local militias to push out the displaced.</h2>',
+            location: {
+              center: [31.03374, 7.20294],
+              zoom: 6.75,
+              pitch: 40.50,
+              bearing: 12
+            },
+            mapAnimation: 'flyTo',
+            rotateAnimation: false,
+            callback: '',
+            onChapterEnter: [
+
+            ],
+            onChapterExit: [
+
+          ]
+        },
+        {
+            id: '03',
             alignment: 'left',
             hidden: false,
-            title: 'A Global Chokepoint',
-            image: 'images/hormuz.png',
-            description: 'Nearly one-fifth of the world’s oil, and a quarter of its liquified natural gas, flows through the Strait of Hormuz. More than 40 thousand ships move through each year. This chokepoint and the waters around it have long been a major geopolitical flashpoint.',
+            title: 'Sam’s Journey',
+            image: '',
+            description: 'Crisis Group has tracked herders displaced by floods who later got caught up in violent attacks with the local communities. Many of these have been unable to return home until the floods recede further. Herders uprooted by three straight years of catastrophic flooding are clashing with populations in the country’s south, who are trying to force them to return home.  Heavily armed, the herders moved south from Jonglei, the epicenter of the Nile water floods, to the Equatoria region, where local communities have also formed armed local militias to push out the displaced.',
             location: {
-              center: [55.604979, 25.750385],
+              center: [31.03374, 7.20294],
+              zoom: 6.75,
+              pitch: 40.50,
+              bearing: 12
+            },
+            mapAnimation: 'flyTo',
+            rotateAnimation: false,
+            callback: '',
+            onChapterEnter: [
+              {
+          			layer: 'satellite',
+          			duration: 2000,
+          			opacity: 1
+          		},
+              {
+          			layer: 'sam',
+          			duration: 2000,
+          			opacity: 1
+          		}
+            ],
+            onChapterExit: [
+              {
+                layer: 'satellite',
+                duration: 2000,
+                opacity: 0
+              },
+              {
+          			layer: 'sam',
+          			duration: 2000,
+          			opacity: 0
+          		}
+          ]
+        },
+        {
+            id: '03',
+            alignment: 'center',
+            hidden: false,
+            title: 'Disaster displacement',
+            image: '',
+            description: 'Since 2020, the country has struggled with historic floods, putting persistent pressures on affected communities/regions. States like Jonglei where Samuel is from, have been at the forefront.<div class="video-container"><iframe src="https://flo.uri.sh/visualisation/10858067/embed" frameborder="0" scrolling="no"></iframe></div><br /><div class="video-container"><iframe src="https://flo.uri.sh/visualisation/10808249/embed" frameborder="0" scrolling="no"></iframe></div>',
+            location: {
+              center: [31.03374, 7.20294],
+              zoom: 6.75,
+              pitch: 40.50,
+              bearing: 12
+            },
+            mapAnimation: 'flyTo',
+            rotateAnimation: false,
+            callback: '',
+            onChapterEnter: [
+
+            ],
+            onChapterExit: [
+
+          ]
+        },
+        {
+            id: '04',
+            alignment: 'center',
+            hidden: false,
+            title: 'The persistance of flooding',
+            image: '',
+            description: 'Heightened flood levels today increase flood risk tomorrow, as soils are still soaked and retention capabilities will soon be reached – requiring minimal additional rains over the coming months to induce floods.',
+            location: {
+              center: [31.03374, 7.20294],
+              zoom: 6.75,
+              pitch: 40.50,
+              bearing: 12
+            },
+            mapAnimation: 'flyTo',
+            rotateAnimation: false,
+            callback: '',
+            onChapterEnter: [
+
+            ],
+            onChapterExit: [
+
+          ]
+        },
+        {
+            id: '05',
+            alignment: 'left',
+            hidden: false,
+            title: '',
+            image: '',
+            description: 'Even typically dry months, like the low-water mark in April, witnessed substantial flooding in recent years. Like Samuel, many IDPs would prefer to return home, the persistent flooding keeps areas inaccessible as waters are unable to recede.',
+            location: {
+              center: [31.03374, 7.20294],
+              zoom: 6.75,
+              pitch: 40.50,
+              bearing: 12
+            },
+            mapAnimation: 'flyTo',
+            rotateAnimation: false,
+            callback: '',
+            onChapterEnter: [
+
+            ],
+            onChapterExit: [
+
+          ]
+        },
+        {
+            id: '06',
+            alignment: 'left',
+            hidden: false,
+            title: '',
+            image: '',
+            description: 'These floods have contributed to widespread livelihood insecurity and displacement across the country, driving many south for refuge.',
+            location: {
+              center: [31.03374, 7.20294],
+              zoom: 6.75,
+              pitch: 40.50,
+              bearing: 12
+            },
+            mapAnimation: 'flyTo',
+            rotateAnimation: false,
+            callback: '',
+            onChapterEnter: [
+
+            ],
+            onChapterExit: [
+
+          ]
+        },
+        {
+            id: '07',
+            alignment: 'left',
+            hidden: false,
+            title: '',
+            image: '',
+            description: 'Lorem ipsum dolor amet',
+            location: {
+              center: [31.03374, 7.20294],
               zoom: 6.75,
               pitch: 40.50,
               bearing: 12
