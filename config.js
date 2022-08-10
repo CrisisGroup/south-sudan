@@ -1,5 +1,5 @@
 var config = {
-    style: 'mapbox://styles/daltonwb/cl6kq7h9s006i16p906dmxn2p',
+    style: 'mapbox://styles/daltonwb/cl6nvierd003w16ogbpxge3fo',
     accessToken: 'pk.eyJ1IjoiZGFsdG9ud2IiLCJhIjoiOWdSSXFQSSJ9.HZyjh4g3TAAOAncwelv9Vw',
     showMarkers: false,
     markerColor: '#3FB1CE',
@@ -21,18 +21,46 @@ var config = {
           description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
           location: {
             center: [25.24688, 3.93630],
-            zoom: 3.5,
+            zoom: 2,
             pitch: 0,
             bearing: 0
           },
           mapAnimation: 'flyTo',
           rotateAnimation: true,
-          callback: '',
+          callback: 'enableFreetime',
           onChapterEnter: [
-
+            {
+              layer: 'crisis_countries',
+              duration: 2000,
+              opacity: 1
+            },
+            {
+              layer: 'crisis_countries2',
+              duration: 2000,
+              opacity: 1
+            },
+            {
+              layer: 'idp_global',
+              duration: 2000,
+              opacity: 1
+            }
           ],
           onChapterExit: [
-
+            {
+              layer: 'crisis_countries',
+              duration: 2000,
+              opacity: 0
+            },
+            {
+              layer: 'crisis_countries2',
+              duration: 2000,
+              opacity: 0
+            },
+            {
+              layer: 'idp_global',
+              duration: 2000,
+              opacity: 0
+            }
         ]
       },
         {
@@ -41,7 +69,7 @@ var config = {
             hidden: false,
             title: '',
             image: '',
-            description: '<div class="html-video-container"><video width="100%" height="100%" autoplay="" loop="" muted="">&gt;<source src="images/placeholder.mp4" type="video/mp4"></video></div>Catastrophic floods are pummeling South Sudan, submerging large swathes of the country and displacing hundreds of thousands.' + '<br /><br />' + 'Forecasts project a fourth straight year of floods after the rainy season, which has already begun, putting thousands of South Sudanese at the frontline of one of the world’s most invisible climate disasters.' + '<br /><br />' + 'This flooding has also helped drive conflict that has killed dozens (or hundreds?), hundreds of miles to the south.',
+            description: '<div class="html-video-container"><video width="100%" height="100%" autoplay="" loop="" muted="">&gt;<source src="images/year_gif3.mp4" type="video/mp4"></video></div>Catastrophic floods are pummeling South Sudan, submerging large swathes of the country and displacing hundreds of thousands.' + '<br /><br />' + 'Forecasts project a fourth straight year of floods after the rainy season, which has already begun, putting thousands of South Sudanese at the frontline of one of the world’s most invisible climate disasters.' + '<br /><br />' + 'This flooding has also helped drive conflict that has killed dozens (or hundreds?), hundreds of miles to the south.',
             location: {
               center: [31.03374, 7.20294],
               zoom: 6.75,
@@ -50,7 +78,7 @@ var config = {
             },
             mapAnimation: 'flyTo',
             rotateAnimation: false,
-            callback: '',
+            callback: 'disableFreetime',
             onChapterEnter: [
 
             ],
@@ -139,7 +167,11 @@ var config = {
             rotateAnimation: false,
             callback: '',
             onChapterEnter: [
-
+              {
+                layer: 'flood-intensity',
+                duration: 2000,
+                opacity: 0
+              }
             ],
             onChapterExit: [
 
@@ -147,7 +179,7 @@ var config = {
         },
         {
             id: '04',
-            alignment: 'center',
+            alignment: 'left',
             hidden: false,
             title: 'The persistance of flooding',
             image: '',
@@ -162,10 +194,23 @@ var config = {
             rotateAnimation: false,
             callback: '',
             onChapterEnter: [
-
+              {
+                layer: 'satellite',
+                duration: 2000,
+                opacity: .7
+              },
+              {
+          			layer: 'flood-intensity',
+          			duration: 2000,
+          			opacity: 1
+          		}
             ],
             onChapterExit: [
-
+              {
+                layer: 'satellite',
+                duration: 2000,
+                opacity: 0
+              }
           ]
         },
         {
@@ -185,7 +230,11 @@ var config = {
             rotateAnimation: false,
             callback: '',
             onChapterEnter: [
-
+              {
+                layer: 'idp-map',
+                duration: 2000,
+                opacity: 0
+              }
             ],
             onChapterExit: [
 
@@ -208,7 +257,11 @@ var config = {
             rotateAnimation: false,
             callback: '',
             onChapterEnter: [
-
+              {
+                layer: 'idp-map',
+                duration: 2000,
+                opacity: 1
+              }
             ],
             onChapterExit: [
 
