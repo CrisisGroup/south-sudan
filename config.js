@@ -197,7 +197,7 @@ var config = {
               {
                 layer: 'satellite',
                 duration: 2000,
-                opacity: .7
+                opacity: 1
               },
               {
           			layer: 'flood-intensity',
