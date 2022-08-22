@@ -294,14 +294,6 @@
           });
       };
 
-      map.setFog({
-        'horizon-blend': 0.1,
-        'star-intensity': 0.15,
-        'color': '#4a6993',
-        'high-color': 'rgba(36, 51, 71, 5)',
-        'space-color': 'rgba(16, 24, 32, 1.0)'
-      });
-
       // As the map moves, grab and update bounds in inset map.
       if (config.inset) {
       map.on('move', getInsetBounds);
