@@ -34,17 +34,44 @@ a:hover, a:visited {
     color: #E87722;
     letter-spacing: .1em;
     padding: 1vh 2vw;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 0.95) 100%), url('../images/header_bg2.jpg');
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    background-opacity: .1;
+    background-size: cover;
 }
 #header img {
-  padding: 2vh 2vw;
+  position: absolute;
+  top: 0;
+  margin-left: 70%;
 }
-#header h1, #header h2, #header p {
-    margin: 0;
+
+#header h1, #header h2 {
+    margin: 10% auto 1%;
     padding: 2vh 2vw;
-    text-align: left;
+    text-align: center;
     font-family: 'Libre Franklin', sans-serif;
     font-weight: 700;
+    font-size: 52px;
+    color: #DFD7D5;
 }
+
+#header p#first {
+  text-align: center;
+  font-family: Georgia, serif;
+  color: #DFD7D5;
+  padding: 0 25%;
+  font-size: 1.6em;
+}
+
+#header p#second {
+  text-align: center;
+  font-family: 'PT Serif', serif;
+  color: #DFD7D5;
+  padding: 0 25%;
+  font-size: 1.6em;
+}
+
 #mapInset {
             bottom:50px;
             right:30px;
@@ -176,6 +203,25 @@ h5 {
   background-color: rgba(0, 0, 0, 0.6);
   border-radius: 5px;
 }
+
+#NARRATIVE-1 .light {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 0.95) 100%), url('../images/header_bg2.jpg');
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  background-opacity: .1;
+  background-size: cover;
+  padding: 5% 20%;
+}
+
+#NARRATIVE-3 .light {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 0.95) 100%), url('../images/header_bg2.jpg');
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  background-opacity: .1;
+  background-size: cover;
+  padding: 5% 20%;
+}
+
 .dark {
     color: #fafafa;
     background-color: #FFB81C;
@@ -188,6 +234,10 @@ h5 {
 
 .step.active {
     opacity: 0.9;
+}
+
+.active-solid {
+	opacity: .99 !important;
 }
 
 .step div {
@@ -295,20 +345,18 @@ ul.legend-ul li {
 }
 
 #freeExplore {
-      background-color: #6C2020;
-      border-radius: 10px;
-      border: none;
+      border: solid 2px #6C2020;
       color: #E1E0E0;
-      padding: 20px 34px;
+      padding: 20px;
+      width: 150px;
       text-align: center;
       text-decoration: none;
       display: inline-block;
       font-size: 20px;
-      margin: 25px 2px;
-      cursor: pointer;
       display: block;
+      margin: 10% auto;
+      font-family: 'Libre Franklin', sans-serif;
 }
-
 #freeExplore:hover {
     background-color: #fff;
     color: #000;
