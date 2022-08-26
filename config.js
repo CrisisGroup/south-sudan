@@ -119,7 +119,7 @@ var config = {
             hidden: false,
             title: 'Disaster displacement',
             image: '',
-            description: 'Since 2020, the country has struggled with historic floods, putting persistent pressures on affected communities, driving internal displacement.' + '<br /><br />' + '<div class="video-container"><div class="flourish-embed flourish-table" data-src="visualisation/11009243"></div></div>',
+            description: 'Since 2020, the country has struggled with historic floods, putting persistent pressures on affected communities, driving internal displacement.' + '<br /><br />' + '<div class="flourish-embed flourish-table" data-src="visualisation/11009243"></div>',
             location: {
               center: [31.691412, 7.078249],
               zoom: 7.25,
