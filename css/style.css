@@ -373,6 +373,7 @@ ul.legend-ul li {
       display: block;
       margin: 10% auto;
       font-family: 'Libre Franklin', sans-serif;
+      border-radius: 8px;
 }
 #freeExplore:hover {
     background-color: #fff;
