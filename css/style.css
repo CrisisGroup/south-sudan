@@ -59,7 +59,7 @@ a:hover, a:visited {
 
 #background-video {
   width: 100vw;
-  object-fit: cover;
+  object-fit: fill;
   position: absolute;
   left: 0;
   right: 0;
@@ -215,6 +215,10 @@ h5 {
   color: #444;
   background-color: rgba(0, 0, 0, 0.6);
   border-radius: 5px;
+}
+
+#INTRO .light {
+  margin-top: 50%;
 }
 
 #NARRATIVE-1 .light {
