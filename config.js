@@ -144,7 +144,7 @@ var config = {
             id: '04',
             alignment: 'left',
             hidden: false,
-            title: 'An anatomy of persistent flooding',
+            title: 'An anatomy of persistent flooding - Summer 2021',
             image: '',
             description: 'In 2021, starting from a high baseline following the lean season, flood levels increased rapidly during the period of July to September.',
             location: {
@@ -180,7 +180,7 @@ var config = {
             id: '05',
             alignment: 'left',
             hidden: false,
-            title: '',
+            title: 'October to December 2021',
             image: '',
             description: 'Flood levels peaked in October, reaching their maximal extent across the country, particularly concentrated in South Sudan’s central regions.',
             location: {
@@ -211,7 +211,7 @@ var config = {
             id: '06',
             alignment: 'left',
             hidden: false,
-            title: '',
+            title: 'Early 2022',
             image: '',
             description: 'Unlike usual years, the floods did not recede by the first months of 2022, which kept areas inaccessible as waters were unable to recede, setting the foundation for another severe flood season ahead.',
             location: {
@@ -242,7 +242,7 @@ var config = {
             id: '07',
             alignment: 'left',
             hidden: false,
-            title: '',
+            title: 'Spring 2022',
             image: '',
             description: 'With soaked soils unable to retain more water, minimal additional rains over the coming months have the potential to induce further catastrophic flooding.',
             location: {
