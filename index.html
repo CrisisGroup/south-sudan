@@ -79,13 +79,24 @@
 
   <div id="map"></div>
 
-  <div id='chapter9legend' class='legend'>
-	<h4>Legend</h4>
+	<div id='introlegend' class='legend'>
+	<h4>Internally Displaced People</h4>
 	<ul class='legend-ul'>
-		<li><div><span style='background-color: #e22c2c'></span>Home Countries of Interns </div></li>
+		<li><div><span style='background-color: #ddd5d0'></span>0 - 50,000 </div></li>
+		<li><div><span style='background-color: #5f3830'></span>> 50,000 </div></li>
+		<li><div><span style='background-color: #5f3830'></span>> 200,000 </div></li>
+	<li><div><span style='background-color: #5f3830'></span>> 500,000 </div></li>
+	<li><div><span style='background-color: #5e3831'></span>Greater than one million </div></li>
 	</ul>
-	<!--<h5><strong>Data</strong>: OSM, <a href='https://www.openstreetmap.org' target='_blank'>OSM</a></h5>-->
-	</div>
+</div>
+
+<div id='ch1legend' class='legend'>
+<h4>Internally Displaced People in South Sudan</h4>
+<ul class='legend-ul'>
+	<li><div>0  <span style='background-color: #b2d5d1'></span></div></li>
+	<li><div><span style='background-color: #338f85'></span>134,000 </div></li>
+</ul>
+</div>
 
   <div id="mapInset"></div>
 
@@ -94,6 +105,8 @@
   </div>
 
   <div id="story"></div>
+
+
 
   <script src="./config.js"></script>
   <script>
@@ -301,10 +314,16 @@
           var chapter = config.chapters.find(chap => chap.id === response.element.id);
           var chapterid = chapter.id;
 
-          if (chapterid == "chapter-9") {
-               $("#chapter9legend").show("slow");
+          if (chapterid == "INTRO") {
+               $("#introlegend").show("slow");
           } else
-               $("#chapter9legend").hide("fast");
+               $("#introlegend").hide("fast");
+
+							 if (chapterid == "01") {
+		                $("#ch1legend").show("slow");
+		           } else
+		                $("#ch1legend").hide("fast");
+
 
 
           response.element.classList.add('active');
@@ -518,7 +537,7 @@ $(document).ready(function(){
   		<span id="cn-notice-text" class="cn-text-container">This site uses cookies. By continuing to browse the site you are agreeing to our use of cookies. Review our privacy policy for more details.</span>
 
   		<span id="cn-notice-buttons" class="cn-buttons-container"><a id="cn-accept-cookie" data-cookie-set="accept" class="cn-set-cookie cn-button" aria-label="YES, I AGREE" style="background-color: #6C2020">YES, I AGREE</a>
-  			<a href="https://www.hotosm.org/privacy" target="_blank" id="cn-more-info" class="cn-more-info cn-button" aria-label="PRIVACY POLICY" style="background-color: #6C2020">PRIVACY POLICY</a>
+  			<a href="https://www.crisisgroup.org/legal/privacy-policy" target="_blank" id="cn-more-info" class="cn-more-info cn-button" aria-label="PRIVACY POLICY" style="background-color: #6C2020">PRIVACY POLICY</a>
   		</span>
 
   		<span id="cn-close-notice" data-cookie-set="accept" class="cn-close-icon" title="No"></span>
