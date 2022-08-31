@@ -1,5 +1,5 @@
 var config = {
-    style: 'mapbox://styles/daltonwb/cl7akurzy000h14quhwj0uoa9',
+    style: 'mapbox://styles/daltonwb/cl7hkum04001b14qp7pu6vle8',
     accessToken: 'pk.eyJ1IjoiZGFsdG9ud2IiLCJhIjoiOWdSSXFQSSJ9.HZyjh4g3TAAOAncwelv9Vw',
     showMarkers: false,
     markerColor: '#3FB1CE',
@@ -97,6 +97,11 @@ var config = {
               {
                 layer: 'flood-intensity',
                 duration: 3000,
+                opacity: 1
+              },
+              {
+                layer: 'idp-map',
+                duration: 4000,
                 opacity: 1
               }
             ],
@@ -444,7 +449,7 @@ var config = {
             hidden: false,
             title: '',
             image: '',
-            description: 'However, after eluding the floods Samuel found himself in a new form of danger shortly after arrival, as violence erupted after multiple herdsmen were reportedly kidnapped and attacked in cattle camps. Members of Samuel’s group retaliated by destroying the crops and homes of host communities. While Samuel states he was unarmed, most of his fellow herders carried weapons[, as he explains to “(...) to protect our cows.”]' + '<br /><br />' + 'Violence between IDPs and host communities is not uncommon. A majority of interviewees reported tensions between displaced herders and host communities, predominantly over land use, destruction caused by cattle and cattle theft, and political grievances, which were usually highest when they were near farms or rebel encampments.' + '<div class="video-container"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/B3PjuunEYP4" frameBorder="0"></iframe></div>',
+            description: 'However, after eluding the floods Samuel found himself in a new form of danger shortly after arrival, as violence erupted after multiple herdsmen were reportedly kidnapped and attacked in cattle camps. Members of Samuel’s group retaliated by destroying the crops and homes of host communities. While Samuel states he was unarmed, most of his fellow herders carried weapons[, as he explains to “(...) to protect our cows.”]' + '<br /><br />' + 'Violence between IDPs and host communities is not uncommon. A majority of interviewees reported tensions between displaced herders and host communities, predominantly over land use, destruction caused by cattle and cattle theft, and political grievances, which were usually highest when they were near farms or rebel encampments.' + '<div class="video-container"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/B3PjuunEYP4" frameBorder="0" allowfullscreen></iframe></div>',
             location: {
               center: [31.03374, 7.20294],
               zoom: 6.75,
@@ -555,10 +560,18 @@ var config = {
             rotateAnimation: false,
             callback: '',
             onChapterEnter: [
-
+              {
+                layer: 'dryness',
+                duration: 2000,
+                opacity: 1
+              }
             ],
             onChapterExit: [
-
+              {
+                layer: 'dryness',
+                duration: 2000,
+                opacity: 0
+              }
           ]
         },
         {
@@ -567,7 +580,7 @@ var config = {
             hidden: false,
             title: '',
             image: '',
-            description: 'Just as local climate impacts can devolve into national catastrophe across the country, future disputes over resources due to weather and climate hazards have the potential to spiral into regional instability and crises. As global warming increases unabated, weather and climate extremes are likely to become more severe and frequent – bringing with it catastrophic consequences for peace and security.',
+            description: 'Just as local climate impacts can devolve into national catastrophe across the country, future disputes over resources due to weather and climate hazards have the potential to spiral into regional instability and crises. As global warming increases unabated, weather and climate extremes are likely to become more severe and frequent – bringing with it catastrophic consequences for peace and security.<br /><br /><div class="video-container"><iframe src="https://flo.uri.sh/visualisation/11056737/embed" frameborder="0" scrolling="no"></iframe></div>',
             location: {
               center: [16.762332, 6.119170],
               zoom: 3,
@@ -579,14 +592,24 @@ var config = {
             callback: '',
             onChapterEnter: [
               {
-                layer: 'acled',
+                layer: 'fatalities',
+                duration: 2000,
+                opacity: 1
+              },
+              {
+                layer: 'horn-countries',
                 duration: 2000,
                 opacity: 1
               }
             ],
             onChapterExit: [
               {
-                layer: 'acled',
+                layer: 'fatalities',
+                duration: 2000,
+                opacity: 0
+              },
+              {
+                layer: 'horn-countries',
                 duration: 2000,
                 opacity: 0
               }
