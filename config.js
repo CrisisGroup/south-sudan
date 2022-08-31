@@ -556,10 +556,10 @@ var config = {
             image: '',
             description: 'While floods have been an instrumental driver of displacement and conflict in South Sudan, the region is also simultaneously experiencing other forms of climatic distress.' + '<br /><br />' + 'Since 2020, much of the eastern Horn of Africa has been marred by below-average rainfall, currently resulting in historic prolonged droughts, which follow the 2019 locust outbreak that strained farmers in the region. The March-May 2022 rainy season was exceptionally dry and there are elevated chances of a fifth drought for the upcoming October-December short wet season.',
             location: {
-              center: [35.527068, 6.971801],
-              zoom: 3.85,
-              pitch: 40.50,
-              bearing: 12
+              center: [31.73713, 7.21163],
+              zoom: 5.64,
+              pitch: 44.00,
+              bearing: 23.20
             },
             mapAnimation: 'flyTo',
             rotateAnimation: false,
