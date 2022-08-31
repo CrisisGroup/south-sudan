@@ -281,6 +281,11 @@ var config = {
                 layer: 'flood4d',
                 duration: 2000,
                 opacity: 0
+              },
+              {
+                layer: 'south_sudan',
+                duration: 4000,
+                opacity: 0
               }
           ]
         },
@@ -594,7 +599,7 @@ var config = {
               {
                 layer: 'fatalities',
                 duration: 2000,
-                opacity: 1
+                opacity: .7
               },
               {
                 layer: 'horn-countries',
