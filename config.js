@@ -102,7 +102,7 @@ var config = {
               {
                 layer: 'idp-map',
                 duration: 4000,
-                opacity: 1
+                opacity: .6
               }
             ],
             onChapterExit: [
@@ -170,7 +170,7 @@ var config = {
               {
                 layer: 'sat-flood',
                 duration: 2000,
-                opacity: 1
+                opacity: .6
               },
               {
                 layer: 'flood4a',
@@ -396,7 +396,11 @@ var config = {
             rotateAnimation: false,
             callback: '',
             onChapterEnter: [
-
+              {
+                layer: 'satellite',
+                duration: 2000,
+                opacity: 1
+              }
             ],
             onChapterExit: [
 
@@ -419,7 +423,11 @@ var config = {
             rotateAnimation: false,
             callback: 'rotateData',
             onChapterEnter: [
-
+              {
+                layer: 'satellite',
+                duration: 2000,
+                opacity: 1
+              }
             ],
             onChapterExit: [
 
@@ -442,7 +450,11 @@ var config = {
             rotateAnimation: false,
             callback: '',
             onChapterEnter: [
-
+              {
+                layer: 'satellite',
+                duration: 2000,
+                opacity: 1
+              }
             ],
             onChapterExit: [
 
@@ -450,16 +462,16 @@ var config = {
         },
         {
             id: '14',
-            alignment: 'center',
+            alignment: 'left',
             hidden: false,
             title: '',
             image: '',
-            description: 'However, after eluding the floods Samuel found himself in a new form of danger shortly after arrival, as violence erupted after multiple herdsmen were reportedly kidnapped and attacked in cattle camps. Members of Samuel’s group retaliated by destroying the crops and homes of host communities. While Samuel states he was unarmed, most of his fellow herders carried weapons[, as he explains to “(...) to protect our cows.”]' + '<br /><br />' + 'Violence between IDPs and host communities is not uncommon. A majority of interviewees reported tensions between displaced herders and host communities, predominantly over land use, destruction caused by cattle and cattle theft, and political grievances, which were usually highest when they were near farms or rebel encampments.' + '<div class="video-container"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/B3PjuunEYP4" frameBorder="0" allowfullscreen></iframe></div>',
+            description: 'However, after eluding the floods Samuel found himself in a new form of danger shortly after arrival, as violence erupted after multiple herdsmen were reportedly kidnapped and attacked in cattle camps. Members of Samuel’s group retaliated by destroying the crops and homes of host communities. While Samuel states he was unarmed, most of his fellow herders carried weapons[, as he explains to “(...) to protect our cows.”]' + '<br /><br />' + 'Violence between IDPs and host communities is not uncommon. A majority of interviewees reported tensions between displaced herders and host communities, predominantly over land use, destruction caused by cattle and cattle theft, and political grievances, which were usually highest when they were near farms or rebel encampments.',
             location: {
-              center: [31.03374, 7.20294],
-              zoom: 6.75,
-              pitch: 40.50,
-              bearing: 12
+              center: [31.39527, 4.29953],
+              zoom: 17,
+              pitch: 60.63,
+              bearing: -79.39
             },
             mapAnimation: 'flyTo',
             rotateAnimation: false,
@@ -469,6 +481,44 @@ var config = {
                 layer: 'idp-map',
                 duration: 2000,
                 opacity: 0
+              },
+              {
+                layer: 'satellite',
+                duration: 2000,
+                opacity: 1
+              }
+            ],
+            onChapterExit: [
+
+          ]
+        },
+        {
+            id: '14-VIDEO',
+            alignment: 'full',
+            hidden: false,
+            title: '',
+            image: '',
+            description: '<div class="video-container"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/B3PjuunEYP4" frameBorder="0" allowfullscreen></iframe></div>',
+            location: {
+              center: [31.39527, 4.29953],
+              zoom: 19,
+              pitch: 60.63,
+              bearing: -79.39,
+              speed: .7
+            },
+            mapAnimation: 'flyTo',
+            rotateAnimation: false,
+            callback: '',
+            onChapterEnter: [
+              {
+                layer: 'idp-map',
+                duration: 2000,
+                opacity: 0
+              },
+              {
+                layer: 'satellite',
+                duration: 2000,
+                opacity: 1
               }
             ],
             onChapterExit: [
@@ -544,14 +594,24 @@ var config = {
                 opacity: 0
               },
               {
-                layer: 'horn-idp',
+                layer: 'horn_idp',
                 duration: 2000,
                 opacity: .9
+              },
+              {
+                layer: 'horn-label',
+                duration: 2000,
+                opacity: 1
               }
             ],
             onChapterExit: [
               {
-                layer: 'horn-idp',
+                layer: 'horn_idp',
+                duration: 2000,
+                opacity: 0
+              },
+              {
+                layer: 'horn-label',
                 duration: 2000,
                 opacity: 0
               }

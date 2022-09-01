@@ -82,11 +82,11 @@
 	<div id='introlegend' class='legend'>
 	<h4>Internally Displaced People</h4>
 	<ul class='legend-ul'>
-		<li><div><span style='background-color: #ddd5d0'></span>Less than 50 thousand </div></li>
-		<li><div><span style='background-color: #5f3830'></span>> 50,000 </div></li>
+		<li><div><span style='background-color: #ded6d1'></span>Less than 50 thousand </div></li>
+		<li><div><span style='background-color: #b2d5d1'></span>> 50,000 </div></li>
 		<li><div><span style='background-color: #5f3830'></span>> 200,000 </div></li>
 	<li><div><span style='background-color: #5f3830'></span>> 500,000 </div></li>
-	<li><div><span style='background-color: #5e3831'></span>Greater than one million </div></li>
+	<li><div><span style='background-color: #338f85'></span>Greater than one million </div></li>
 	</ul>
 </div>
 
@@ -99,7 +99,7 @@
 </div>
 
 <div id='ch2legend' class='legend'>
-<h4>Flooded Areas by Months of Year</h4>
+<h4>Flood intensity, months per year with flooding</h4>
 <ul class='legend-ul'>
 	<li><div><span style='background-color: #ffffff'></span>Not flooded </div></li>
 	<li><div><span style='background-color: #4f8da2'></span>Six months </div></li>
@@ -107,8 +107,18 @@
 </ul>
 </div>
 
+<div id='ch8legend' class='legend'>
+	<h4>Flood intensity, days per month with flooding</h4>
+<ul class='legend-ul'>
+	<li><div><span style='background-color: #b6edf0'></span> 1 - 6</div></li>
+	<li><div><span style='background-color: #74b4e8'></span> 7 - 12</div></li>
+	<li><div><span style='background-color: #1f83e0'></span> 13 - 18</div></li>
+<li><div><span style='background-color: #1d44b8'></span> 19 - 24</div></li>
+<li><div><span style='background-color: #090991'></span> 25 - 30</div></li>
+</ul>
+</div>
+
 <div id='01endlegend' class='legend'>
-<h4>Internally Displaced People</h4>
 <ul class='legend-ul'>
 	<li><div>Higher dryness <span style='background-color: #bb5421'></span></div></li>
 	<li><div><span style='background-color: #e99148'></span></div></li>
@@ -120,7 +130,7 @@
 </div>
 
 <div id='endlegend' class='legend'>
-<h4>Total fatalities</h4>
+<h4>Total fatalities - land-related violent incidents since 2017</h4>
 <ul class='legend-ul'>
 <li><div><span style='background-color: #a71616; border: solid 1px #fff; border-radius: 100px; width: 10px; height: 10px;'></span>1 Fatality</div></li>
 <li><div><span style='background-color: #a71616; border: solid 1px #fff; border-radius: 100px; width: 50px; height: 50px;'></span><span style='vertical-align: top; padding-right: 10px;'>250 Fatalities</span></div></li>
@@ -360,6 +370,11 @@
 		 		                $("#ch2legend").show("slow");
 		 		           } else
 		 		                $("#ch2legend").hide("fast");
+
+												if (chapterid == "08") {
+				 		                $("#ch8legend").show("slow");
+				 		           } else
+				 		                $("#ch8legend").hide("fast");
 
 												if (chapterid == "END-02") {
 														$("#01endlegend").show("slow");
