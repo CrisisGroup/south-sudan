@@ -1,5 +1,5 @@
 var config = {
-    style: 'mapbox://styles/daltonwb/cl7hkum04001b14qp7pu6vle8',
+    style: 'mapbox://styles/daltonwb/cl7j5kj55002h15pd04po7a3f',
     accessToken: 'pk.eyJ1IjoiZGFsdG9ud2IiLCJhIjoiOWdSSXFQSSJ9.HZyjh4g3TAAOAncwelv9Vw',
     showMarkers: false,
     markerColor: '#3FB1CE',
@@ -529,23 +529,32 @@ var config = {
             image: '',
             description: 'South Sudan is not an isolated case in the Horn of Africa. Climate and security related internal displacement affect millions of people each year. Yet, humanitarian efforts to alleviate the crisis across the region have fell remarkably short. Most notably, the South Sudan Humanitarian response plan for 2021 fell over half a billion dollars short of what was requested to respond to the crisis',
             location: {
-              center: [35.527068, 6.971801],
-              zoom: 3.85,
-              pitch: 40.50,
-              bearing: 12
+              center: [39.029264, 7.846526],
+              zoom: 5.3,
+              pitch: 42,
+              bearing: -25.6
             },
             mapAnimation: 'flyTo',
             rotateAnimation: false,
-            callback: '',
+            callback: 'rotateData',
             onChapterEnter: [
               {
                 layer: 'satellite',
                 duration: 2000,
                 opacity: 0
+              },
+              {
+                layer: 'horn-idp',
+                duration: 2000,
+                opacity: .9
               }
             ],
             onChapterExit: [
-
+              {
+                layer: 'horn-idp',
+                duration: 2000,
+                opacity: 0
+              }
           ]
         },
         {
@@ -587,10 +596,10 @@ var config = {
             image: '',
             description: 'Just as local climate impacts can devolve into national catastrophe across the country, future disputes over resources due to weather and climate hazards have the potential to spiral into regional instability and crises. As global warming increases unabated, weather and climate extremes are likely to become more severe and frequent – bringing with it catastrophic consequences for peace and security.<br /><br /><div class="video-container"><iframe src="https://flo.uri.sh/visualisation/11056737/embed" frameborder="0" scrolling="no"></iframe></div>',
             location: {
-              center: [16.762332, 6.119170],
-              zoom: 3,
-              pitch: 24,
-              bearing: 15
+              center: [31.73713, 7.21163],
+              zoom: 5,
+              pitch: 44.00,
+              bearing: 23.20
             },
             mapAnimation: 'flyTo',
             rotateAnimation: false,
