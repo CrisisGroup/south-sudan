@@ -102,7 +102,7 @@ var config = {
               {
                 layer: 'idp-map',
                 duration: 4000,
-                opacity: .6
+                opacity: .4
               }
             ],
             onChapterExit: [
