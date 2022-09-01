@@ -608,7 +608,7 @@ var config = {
               {
                 layer: 'fatalities',
                 duration: 2000,
-                opacity: .7
+                opacity: .3
               },
               {
                 layer: 'horn-countries',
