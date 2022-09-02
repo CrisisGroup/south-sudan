@@ -10,7 +10,7 @@ var config = {
     title: '<a href="https://www.crisisgroup.org" target="_blank"><img src="images/icg_logo.png" width="150" height="150" /></a><br /><video id="background-video" autoplay loop muted poster="images/poster.jpg"><source src="images/aerial.mp4" type="video/mp4"></video><h1>Floods in South Sudan</h1><p id="first"><em>As the world encounters record-breaking droughts, floods and heat extremes, the manifestations of climate change tends to more severely affect the Global South, where it is a main cause of internal displacement. In 2021, 88% of climate displacement occurs in countries with high conflict risk today, which coincide to create a vicious cycle – exacerbating insecurity and imposing major obstacles to humanitarian interventions.</em></p>' + '<p id="second">The Horn of Africa is acutely susceptible, where climate related displacement, conflict, poor governance and the absence of basic services interact to create a toxic mix of instability and violence. And the outlook is bleak: the Horn currently experiencing several weather hazards simultaneously: from a historic drought in the Eastern Horn, to floods in South Sudan, which are forecasted to continue throughout 2022.</p><a id="freeExplore" href="#INTRO"> BEGIN &nbsp;&nbsp; &#8595; </a>',
     subtitle: '',
     byline: '',
-    footer: '<h4>Credits</h4><strong>Lead Contributor</strong>: Ulrich Eberle<br /><strong>Visualizations & Design</strong>: Paul Franz and Claire Boccon-Gibod<br /><strong>Support</strong>: Carolin Graf and Andrew Ciacci<br /><br /><h4>Data Sources</h4> <div class="data-sources"><a href="https://www.openstreetmap.org" target="_blank">OpenStreetMap</a><br /><a href="https://www.mapbox.com" target="_blank">Mapbox</a> and <a href="https://www.mapbox.com/community" target="_blank">Mapbox Community Team</a><br /><br /><a href="https://www.crisisgroup.org/legal" target="_blank">Privacy Policy & Legal</a></div>',
+    footer: '<h4>Credits</h4><strong>Lead Contributors</strong>: Alan Boswell and Ulrich Eberle<br /><strong>Visualizations & Design</strong>: Paul Franz and Claire Boccon-Gibod<br /><strong>Support</strong>: Carolin Graf and Andrew Ciacci<br /><br /><h4>Data Sources</h4> <div class="data-sources"><a href="https://www.openstreetmap.org" target="_blank">OpenStreetMap</a><br /><a href="https://www.mapbox.com" target="_blank">Mapbox</a> and <a href="https://www.mapbox.com/community" target="_blank">Mapbox Community Team</a><br /><br /><a href="https://www.crisisgroup.org/legal" target="_blank">Privacy Policy & Legal</a></div>',
     chapters: [
       {
           id: 'INTRO',
@@ -37,6 +37,11 @@ var config = {
             {
               layer: 'idp-map',
               duration: 2000,
+              opacity: 0
+            },
+            {
+              layer: 'south_sudan',
+              duration: 4000,
               opacity: 0
             }
           ],
@@ -70,6 +75,11 @@ var config = {
               layer: 'idp-map',
               duration: 4000,
               opacity: 1
+            },
+            {
+              layer: 'south_sudan',
+              duration: 4000,
+              opacity: 1
             }
           ],
           onChapterExit: [
@@ -85,7 +95,7 @@ var config = {
             description: 'The flood’s impact was particularly severe in South Sudan’s central region, which witnessed abnormal flood intensity and duration in recent years. At the forefront are states, shown here with high flood intensity are the states Jonglei, Unity and Upper Nile.',
             location: {
               center: [31.691412, 7.078249],
-              zoom: 7.25,
+              zoom: 7.1,
               pitch: 42,
               bearing: -20.80,
               speed: .1
@@ -103,6 +113,11 @@ var config = {
                 layer: 'idp-map',
                 duration: 4000,
                 opacity: .4
+              },
+              {
+                layer: 'south_sudan',
+                duration: 4000,
+                opacity: 1
               }
             ],
             onChapterExit: [
@@ -114,6 +129,11 @@ var config = {
               {
                 layer: 'idp-map',
                 duration: 2000,
+                opacity: 0
+              },
+              {
+                layer: 'south_sudan',
+                duration: 4000,
                 opacity: 0
               }
           ]
@@ -580,7 +600,7 @@ var config = {
             description: 'South Sudan is not an isolated case in the Horn of Africa. Climate and security related internal displacement affect millions of people each year. Yet, humanitarian efforts to alleviate the crisis across the region have fell remarkably short. Most notably, the South Sudan Humanitarian response plan for 2021 fell over half a billion dollars short of what was requested to respond to the crisis',
             location: {
               center: [39.029264, 7.846526],
-              zoom: 5.3,
+              zoom: 4.8,
               pitch: 42,
               bearing: -25.6
             },
