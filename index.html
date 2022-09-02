@@ -107,6 +107,15 @@
 </ul>
 </div>
 
+<div id='ch4legend' class='legend'>
+<h4>Flood intensity, months per season with flooding</h4>
+<ul class='legend-ul'>
+	<li><div><span style='background-color: #bed2ff'></span>Area flooded for 1 of 3 months </div></li>
+	<li><div><span style='background-color: #1f83e0'></span>Area flooded for 2 of 3 months </div></li>
+<li><div><span style='background-color: #090991'></span>Flooded all season </div></li>
+</ul>
+</div>
+
 <div id='ch8legend' class='legend'>
 	<h4>Flood intensity, days per month with flooding</h4>
 <ul class='legend-ul'>
@@ -370,6 +379,11 @@
 		 		                $("#ch2legend").show("slow");
 		 		           } else
 		 		                $("#ch2legend").hide("fast");
+
+												if ((chapterid == "04" || chapterid == "05" || chapterid == "06" || chapterid == "07" )) {
+				 		                $("#ch4legend").show("slow");
+				 		           } else
+				 		                $("#ch4legend").hide("fast");
 
 												if (chapterid == "08") {
 				 		                $("#ch8legend").show("slow");
