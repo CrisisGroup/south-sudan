@@ -600,7 +600,7 @@ var config = {
             description: 'South Sudan is not an isolated case in the Horn of Africa. Climate and security related internal displacement affect millions of people each year. Yet, humanitarian efforts to alleviate the crisis across the region have fell remarkably short. Most notably, the South Sudan Humanitarian response plan for 2021 fell over half a billion dollars short of what was requested to respond to the crisis',
             location: {
               center: [39.029264, 7.846526],
-              zoom: 4.8,
+              zoom: 5,
               pitch: 42,
               bearing: -25.6
             },
