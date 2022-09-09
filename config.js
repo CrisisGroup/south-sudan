@@ -313,6 +313,16 @@ var config = {
                 layer: 'flood4d',
                 duration: 2000,
                 opacity: .8
+              },
+              {
+                layer: 'sat-flood',
+                duration: 2000,
+                opacity: .6
+              },
+              {
+                layer: 'south_sudan',
+                duration: 4000,
+                opacity: 1
               }
             ],
             onChapterExit: [
@@ -324,6 +334,11 @@ var config = {
               {
                 layer: 'south_sudan',
                 duration: 4000,
+                opacity: 0
+              },
+              {
+                layer: 'sat-flood',
+                duration: 2000,
                 opacity: 0
               }
           ]
@@ -368,18 +383,10 @@ var config = {
             rotateAnimation: false,
             callback: '',
             onChapterEnter: [
-              {
-                layer: 'satellite',
-                duration: 2000,
-                opacity: 0
-              }
+
             ],
             onChapterExit: [
-              {
-                layer: 'sat-flood',
-                duration: 2000,
-                opacity: 0
-              }
+
           ]
         },
         {
@@ -399,11 +406,6 @@ var config = {
             rotateAnimation: false,
             callback: '',
             onChapterEnter: [
-              {
-          			layer: 'satellite',
-          			duration: 2000,
-          			opacity: 1
-          		},
               {
           			layer: 'sam',
           			duration: 2000,
@@ -672,7 +674,7 @@ var config = {
             hidden: false,
             title: '',
             image: '',
-            description: 'While floods have been an instrumental driver of displacement and conflict in South Sudan, the region is also simultaneously experiencing other forms of climatic distress.' + '<br /><br />' + 'Since 2020, much of the eastern Horn of Africa has been marred by below-average rainfall, currently resulting in historic prolonged droughts, which follow the 2019 locust outbreak that strained farmers in the region. The March-May 2022 rainy season was exceptionally dry and there are elevated chances of a fifth drought for the upcoming October-December short wet season.',
+            description: 'While floods have been an instrumental driver of displacement and conflict in South Sudan, the region is also simultaneously experiencing other forms of climatic distress.' + '<br /><br />' + 'Since 2020, much of the eastern Horn of Africa has been marred by below-average rainfall, currently resulting in historic prolonged droughts, which follow the 2019 locust outbreak that strained farmers in the region. The March-May 2022 rainy season was exceptionally dry and there are elevated chances of a fifth drought for the upcoming October-December short wet season.' + '<br /><br />' + '<div class="video-container"><iframe src="https://flo.uri.sh/visualisation/11056737/embed" frameborder="0" scrolling="no"></iframe></div>',
             location: {
               center: [31.73713, 7.21163],
               zoom: 5.64,
@@ -703,7 +705,7 @@ var config = {
             hidden: false,
             title: '',
             image: '',
-            description: 'Just as local climate impacts can devolve into national catastrophe across the country, future disputes over resources due to weather and climate hazards have the potential to spiral into regional instability and crises. As global warming increases unabated, weather and climate extremes are likely to become more severe and frequent – bringing with it catastrophic consequences for peace and security.<br /><br /><div class="video-container"><iframe src="https://flo.uri.sh/visualisation/11056737/embed" frameborder="0" scrolling="no"></iframe></div>',
+            description: 'Just as local climate impacts can devolve into national catastrophe across the country, future disputes over resources due to weather and climate hazards have the potential to spiral into regional instability and crises. As global warming increases unabated, weather and climate extremes are likely to become more severe and frequent – bringing with it catastrophic consequences for peace and security.',
             location: {
               center: [31.73713, 7.21163],
               zoom: 5,
