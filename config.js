@@ -1,5 +1,5 @@
 var config = {
-    style: 'mapbox://styles/daltonwb/cl7t4rydc000d14o54b7qk4bl',
+    style: 'mapbox://styles/daltonwb/cl7uiifhg002b14mpm7dx6yty',
     accessToken: 'pk.eyJ1IjoiZGFsdG9ud2IiLCJhIjoiOWdSSXFQSSJ9.HZyjh4g3TAAOAncwelv9Vw',
     showMarkers: false,
     markerColor: '#3FB1CE',
@@ -62,7 +62,7 @@ var config = {
           description: 'South Sudan is emblematic of these compound risks, where floods are submerging large swathes of the country and displacing hundreds of thousands. In 2021 alone, over half a million people have been displaced. Humanitarian organization brace for another severe flood season, which has already begun, putting thousands of South Sudanese at the frontline of one of the world’s most overlooked climate disasters. This flooding has also helped drive conflict that has killed dozens (or hundreds?), hundreds of miles to the south.',
           location: {
             center: [31.03374, 7.20294],
-            zoom: 6.75,
+            zoom: 5.5,
             pitch: 40.50,
             bearing: 12,
             speed: .4
@@ -80,10 +80,29 @@ var config = {
               layer: 'south_sudan',
               duration: 4000,
               opacity: 1
+            },
+            {
+              layer: 'country_overview',
+              duration: 4000,
+              opacity: 1
+            },
+            {
+              layer: 'country_overview_label',
+              duration: 2000,
+              opacity: 1
             }
           ],
           onChapterExit: [
-
+            {
+              layer: 'country_overview',
+              duration: 4000,
+              opacity: 0
+            },
+            {
+              layer: 'country_overview_label',
+              duration: 4000,
+              opacity: 0
+            }
         ]
       },
         {
@@ -144,7 +163,7 @@ var config = {
             hidden: false,
             title: '',
             image: '',
-            description: '<div class="padding"><h3><span style="background-color: #E87722; font-weight: 600; border-radius: 8px; padding: 5px;">Disaster displacement</span></h3><h4>Flooding by Area (in km2) vs. Displaced Persons by Year</h4><p>Since 2020, the country has struggled with historic floods, putting persistent pressures on affected communities, driving internal displacement.</p></div>' + '<br /><br />' + '<div class="flourish-embed flourish-table" data-src="visualisation/11009243" style="padding: 0;"></div>' + '<br />',
+            description: '<div class="padding"><h3><span style="background-color: #7e6059; font-weight: 600; border-radius: 8px; padding: 5px;">Disaster displacement</span></h3><h4>Flooding by Area (in km2) vs. Displaced Persons by Year</h4><p>Since 2020, the country has struggled with historic floods, putting persistent pressures on affected communities, driving internal displacement.</p></div>' + '<br /><br />' + '<div class="flourish-embed flourish-table" data-src="visualisation/11009243" style="padding: 0;"></div>' + '<br />',
             location: {
               center: [31.691412, 7.078249],
               zoom: 7.01,
