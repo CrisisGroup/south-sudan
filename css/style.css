@@ -5,7 +5,7 @@ body {
     overflow-x: hidden;
 }
 p {
-  font-size: 19px;
+  font-size: 22px;
   line-height: 1.4286;
   color: #e4e4e4;
 }
@@ -74,6 +74,7 @@ a:hover, a:visited {
   color: #DFD7D5;
   padding: 0 25%;
   font-size: 1.6em;
+  letter-spacing: .02em;
 }
 
 #header p#second {
@@ -82,6 +83,7 @@ a:hover, a:visited {
   color: #DFD7D5;
   padding: 0 25%;
   font-size: 1.6em;
+  letter-spacing: .02em;
 }
 
 #mapInset {
@@ -117,7 +119,8 @@ h2.liftout {
 }
 h3 {
   font-family: "franklin-gothic-urw", sans-serif;
-  font-size: 21px;
+  font-size: 26px;
+  font-weight: bold;
   letter-spacing: 1px;
   color: #e4e4e4;
 }
@@ -198,21 +201,33 @@ h5 {
     width: 50vw;
     margin: 0 auto;
 }
+.centered .light {
+  border-radius: 25px;
+}
 .lefty {
     width: 33vw;
 }
+
+.lefty .light {
+  border-radius: 0 25px 25px 0;
+}
+
 .righty {
     width: 33vw;
-    margin-left: 62vw;
+    margin-left: 67vw;
 }
+
+.righty .light {
+  border-radius: 25px 0 0 25px;
+}
+
 .fully {
     width: 100%;
     margin: auto;
 }
 .light {
   color: #444;
-  background-color: #7e6059;
-  border-radius: 25px;
+  background-color: #5f3830;
 }
 
 #INTRO .light {
@@ -220,7 +235,7 @@ h5 {
 }
 
 #NARRATIVE-1 .light {
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 0.95) 100%), url('../images/header_bg2.jpg');
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 0.95) 100%), url('../images/sudan_bg.jpg');
   background-repeat: no-repeat;
   background-position: 50% 0;
   background-opacity: .1;
@@ -229,7 +244,7 @@ h5 {
 }
 
 #NARRATIVE-3 .light {
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 0.95) 100%), url('../images/header_bg2.jpg');
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 0.95) 100%), url('../images/sudan_bg.jpg');
   background-repeat: no-repeat;
   background-position: 50% 0;
   background-opacity: .1;
@@ -320,7 +335,7 @@ ul {
     position: fixed;
     bottom: 30px;
     color: #E4E4E4;
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(95, 56, 48, 0.6);
     box-shadow: 0 1px 2px rgb(0 0 0 / 10%);
     padding: 10px 50px;
     display: none;
@@ -376,7 +391,7 @@ ul.legend-ul li {
 }
 
 #freeExplore {
-      border: solid 2px #6C2020;
+      border: solid 2px #c0afa5;
       color: #E1E0E0;
       padding: 20px;
       width: 150px;
@@ -475,4 +490,8 @@ ul.legend-ul li {
 	left: 0;
 	width: 100%;
 	height: 100%;
+}
+
+.flourish-credit {
+  display: none !important;
 }

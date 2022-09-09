@@ -144,7 +144,7 @@ var config = {
             hidden: false,
             title: '',
             image: '',
-            description: '<div class="padding"><h3>Disaster displacement</h3><p>Since 2020, the country has struggled with historic floods, putting persistent pressures on affected communities, driving internal displacement.</p></div>' + '<br /><br />' + '<div class="flourish-embed flourish-table" data-src="visualisation/11009243" style="padding: 0;"></div>',
+            description: '<div class="padding"><h3><span style="background-color: #E87722; font-weight: 600; border-radius: 8px; padding: 5px;">Disaster displacement</span></h3><h4>Flooding by Area (in km2) vs. Displaced Persons by Year</h4><p>Since 2020, the country has struggled with historic floods, putting persistent pressures on affected communities, driving internal displacement.</p></div>' + '<br /><br />' + '<div class="flourish-embed flourish-table" data-src="visualisation/11009243" style="padding: 0;"></div>' + '<br />',
             location: {
               center: [31.691412, 7.078249],
               zoom: 7.01,
