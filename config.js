@@ -390,10 +390,10 @@ var config = {
             image: '',
             description: 'The impact of the flooding was witnessed early on and persists today. For instance, the unexpected June 2020 flooding took many by surprise. Among them is Samuel, a cattle herder based with his family around Maar in Jonglei, who were displaced together with over 50 other families and several thousand of cattle.' + '<br /><br />' + 'According to interviewees, floods have been cited as a main driver of internal displacement in 2020. Displacement triggers are oftentimes complex and multifaceted, with interviewees frequently also citing insecurity and cattle disease.' + '<br /><br />' + 'The flood devastated his community – leaving no pasture for grazing, destroying homes, and killing cattle due to increased water levels and diseases – all of which were compounded by insecurity from raids.',
             location: {
-              center: [31.03374, 7.20294],
-              zoom: 6.75,
-              pitch: 40.50,
-              bearing: 12
+              center: [31.976400, 5.300356],
+              zoom: 8.30,
+              pitch: 46,
+              bearing: -15.19
             },
             mapAnimation: 'flyTo',
             rotateAnimation: false,
@@ -408,11 +408,21 @@ var config = {
           			layer: 'sam',
           			duration: 2000,
           			opacity: 1
+          		},
+              {
+          			layer: 'sam_label',
+          			duration: 2000,
+          			opacity: 1
           		}
             ],
             onChapterExit: [
               {
           			layer: 'sam',
+          			duration: 2000,
+          			opacity: 0
+          		},
+              {
+          			layer: 'sam_label',
           			duration: 2000,
           			opacity: 0
           		}
@@ -426,7 +436,7 @@ var config = {
             image: '',
             description: '<h2 class="liftout">Samuel and his group travelled hundreds of miles by foot and boat, losing cattle to disease and bandits. As he journeyed southward towards Bor Town, the depth of waters forced Samuel’s group to swim, while carrying children and shepherding the herd. At night Samuel’s party took refuge on higher ground, where flood water were less likely to be a threat.</h2>',
             location: {
-              center: [31.55177, 6.20829],
+              center: [31.353, 6.905],
               zoom: 15,
               pitch: 45,
               bearing: 0
@@ -507,7 +517,7 @@ var config = {
             image: '',
             description: 'However, after eluding the floods Samuel found himself in a new form of danger shortly after arrival, as violence erupted after multiple herdsmen were reportedly kidnapped and attacked in cattle camps. Members of Samuel’s group retaliated by destroying the crops and homes of host communities. While Samuel states he was unarmed, most of his fellow herders carried weapons[, as he explains to “(...) to protect our cows.”]' + '<br /><br />' + 'Violence between IDPs and host communities is not uncommon. A majority of interviewees reported tensions between displaced herders and host communities, predominantly over land use, destruction caused by cattle and cattle theft, and political grievances, which were usually highest when they were near farms or rebel encampments.',
             location: {
-              center: [31.39527, 4.29953],
+              center: [31.285, 4.079],
               zoom: 17,
               pitch: 60.63,
               bearing: -79.39
@@ -539,11 +549,11 @@ var config = {
             image: '',
             description: '<div class="video-container"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/B3PjuunEYP4" frameBorder="0" allowfullscreen></iframe></div>',
             location: {
-              center: [31.39527, 4.29953],
+              center: [31.285, 4.079],
               zoom: 19,
               pitch: 60.63,
               bearing: -79.39,
-              speed: .7
+              speed: 1.5
             },
             mapAnimation: 'flyTo',
             rotateAnimation: false,
