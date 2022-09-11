@@ -1,5 +1,5 @@
 var config = {
-    style: 'mapbox://styles/daltonwb/cl7ukwj72001r14li1gciyqwf',
+    style: 'mapbox://styles/daltonwb/cl7xv7uqi003b15oxeyjqs1bh',
     accessToken: 'pk.eyJ1IjoiZGFsdG9ud2IiLCJhIjoiOWdSSXFQSSJ9.HZyjh4g3TAAOAncwelv9Vw',
     showMarkers: false,
     markerColor: '#3FB1CE',
@@ -407,25 +407,155 @@ var config = {
             callback: '',
             onChapterEnter: [
               {
-          			layer: 'sam',
+          			layer: 'sam1',
+          			duration: 1000,
+          			opacity: 1
+          		},
+              {
+          			layer: 'sam2',
           			duration: 2000,
           			opacity: 1
           		},
               {
-          			layer: 'sam_label',
+          			layer: 'sam3',
+          			duration: 3000,
+          			opacity: 1
+          		},
+              {
+          			layer: 'sam4',
+          			duration: 4000,
+          			opacity: 1
+          		},
+              {
+          			layer: 'sam5',
+          			duration: 5000,
+          			opacity: 1
+          		},
+              {
+          			layer: 'sam6',
+          			duration: 5500,
+          			opacity: 1
+          		},
+              {
+          			layer: 'sam7',
+          			duration: 6000,
+          			opacity: 1
+          		},
+              {
+          			layer: 'sam_label1',
+          			duration: 1000,
+          			opacity: 1
+          		},
+              {
+          			layer: 'sam_label2',
           			duration: 2000,
           			opacity: 1
+          		},
+              {
+          			layer: 'sam_label3',
+          			duration: 3000,
+          			opacity: 1
+          		},
+              {
+          			layer: 'sam_label4',
+          			duration: 4000,
+          			opacity: 1
+          		},
+              {
+          			layer: 'sam_label5',
+          			duration: 5000,
+          			opacity: 1
+          		},
+              {
+          			layer: 'sam_label6',
+          			duration: 5500,
+          			opacity: 1
+          		},
+              {
+          			layer: 'sam_label7',
+          			duration: 6000,
+          			opacity: 1
+          		},
+              {
+          			layer: 'road',
+          			duration: 1000,
+          			opacity: .4
           		}
             ],
             onChapterExit: [
               {
-          			layer: 'sam',
+          			layer: 'sam1',
+          			duration: 1000,
+          			opacity: 0
+          		},
+              {
+          			layer: 'sam2',
           			duration: 2000,
           			opacity: 0
           		},
               {
-          			layer: 'sam_label',
+          			layer: 'sam3',
+          			duration: 3000,
+          			opacity: 0
+          		},
+              {
+          			layer: 'sam4',
+          			duration: 4000,
+          			opacity: 0
+          		},
+              {
+          			layer: 'sam5',
+          			duration: 5000,
+          			opacity: 0
+          		},
+              {
+          			layer: 'sam6',
+          			duration: 5500,
+          			opacity: 0
+          		},
+              {
+          			layer: 'sam7',
+          			duration: 6000,
+          			opacity: 0
+          		},
+              {
+          			layer: 'sam_label1',
+          			duration: 1000,
+          			opacity: 0
+          		},
+              {
+          			layer: 'sam_label2',
           			duration: 2000,
+          			opacity: 0
+          		},
+              {
+          			layer: 'sam_label3',
+          			duration: 3000,
+          			opacity: 0
+          		},
+              {
+          			layer: 'sam_label4',
+          			duration: 4000,
+          			opacity: 0
+          		},
+              {
+          			layer: 'sam_label5',
+          			duration: 5000,
+          			opacity: 0
+          		},
+              {
+          			layer: 'sam_label6',
+          			duration: 5500,
+          			opacity: 0
+          		},
+              {
+          			layer: 'sam_label7',
+          			duration: 6000,
+          			opacity: 0
+          		},
+              {
+          			layer: 'road',
+          			duration: 1000,
           			opacity: 0
           		}
           ]
