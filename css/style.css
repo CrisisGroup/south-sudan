@@ -228,6 +228,7 @@ h5 {
 .light {
   color: #444;
   background-color: #5f3830;
+  background-image: url('../images/dust_transparent.png');
 }
 
 #INTRO .light {
