@@ -47,8 +47,10 @@ a:hover, a:visited {
 }
 #header img {
   position: absolute;
-  top: 35px;
-  margin-left: 85%;
+  top: 5%;
+  right: 5%;
+  height: 200px;
+  width: 200px;
 }
 
 #header h1, #header h2 {
@@ -79,7 +81,7 @@ width: 100%;
   z-index: -1;
 }
 
-#header p#first {
+#header p.hedp {
   text-align: left;
   font-family: Georgia, serif;
   color: #DFD7D5;
@@ -90,19 +92,14 @@ width: 100%;
   line-height: 1.5;
 }
 
-#header p#second {
-  text-align: left;
-  font-family: Georgia, serif;
-  color: #DFD7D5;
-  padding: 0 50% 0 10%;
-  font-size: 1.6em;
-  letter-spacing: .02em;
-  font-style: italic;
-  line-height: 1.5;
+@media (max-width: 1920px) {
+    #header p.hedp {
+        font-size: 1.2em;
+    }
 }
 
 @media (max-width: 1440px) {
-    #header p#first, #header p#second {
+    #header p.hedp {
         display: none;
     }
 }
@@ -286,6 +283,11 @@ h5 {
   width: 60vw;
 }
 
+#END-02 .light {
+  background-image: none;
+  background-color: #5f3830;
+}
+
 .flourish-credit {
   display:inline;
 }
@@ -360,19 +362,17 @@ ul {
 /* Legend CSS */
 
 .legend {
-    border-radius: 5px;
-    position: fixed;
-    bottom: 30px;
-    color: #E4E4E4;
-    background-color: rgba(95, 56, 48, 0.6);
-    box-shadow: 0 1px 2px rgb(0 0 0 / 10%);
-    padding: 10px 50px;
-    display: none;
-    z-index: 1;
-    margin-left: 5vw;
-    font-family: "franklin-gothic-urw", sans-serif;
-    font-weight: 400;
-    font-size: small;
+  border-radius: 5px;
+  position: fixed;
+  bottom: 30px;
+  color: #E4E4E4;
+  padding: 10px 50px;
+  display: none;
+  z-index: 1;
+  font-family: "franklin-gothic-urw", sans-serif;
+  font-weight: 400;
+  font-size: small;
+  margin-left: 35vw;
 }
 
 .legend h4 {

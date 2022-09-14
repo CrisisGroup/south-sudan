@@ -7,7 +7,7 @@ var config = {
     theme: 'light',
     projection: 'globe',
     use3dTerrain: false,
-    title: '<a href="https://www.crisisgroup.org" target="_blank"><img src="images/icg-oj.png" width="200" height="200" /></a><br /><video id="background-video" autoplay loop muted poster="images/poster.jpg"><source src="images/aerial.mp4" type="video/mp4"></video><h1>Floods in South Sudan</h1><p id="first">As the world encounters record-breaking droughts, floods and heat extremes, the manifestations of climate change tends to more severely affect the Global South, where it is a main cause of internal displacement. In 2021, 88% of climate displacement occurs in countries with high conflict risk today, which coincide to create a vicious cycle – exacerbating insecurity and imposing major obstacles to humanitarian interventions.</p>' + '<p id="second">The Horn of Africa is acutely susceptible, where climate related displacement, conflict, poor governance and the absence of basic services interact to create a toxic mix of instability and violence. The outlook is bleak: the Horn currently experiencing several weather hazards simultaneously: from a historic drought in the Eastern Horn, to floods in South Sudan, which are forecasted to continue throughout 2022.</p><a id="freeExplore" href="#INTRO"> BEGIN &nbsp;&nbsp; &#8595; </a>',
+    title: '<a href="https://www.crisisgroup.org" target="_blank"><img id="icg" src="images/icg-oj.png" /></a><br /><video id="background-video" autoplay loop muted poster="images/poster.jpg"><source src="images/aerial.mp4" type="video/mp4"></video><h1>Floods in South Sudan</h1><p class="hedp">As the world encounters record-breaking droughts, floods and heat extremes, the manifestations of climate change tends to more severely affect the Global South, where it is a main cause of internal displacement. In 2021, 88% of climate displacement occurs in countries with high conflict risk today, which coincide to create a vicious cycle – exacerbating insecurity and imposing major obstacles to humanitarian interventions.</p>' + '<p class="hedp">The Horn of Africa is acutely susceptible, where climate related displacement, conflict, poor governance and the absence of basic services interact to create a toxic mix of instability and violence. The outlook is bleak: the Horn currently experiencing several weather hazards simultaneously: from a historic drought in the Eastern Horn, to floods in South Sudan, which are forecasted to continue throughout 2022.</p><a id="freeExplore" href="#INTRO"> BEGIN &nbsp;&nbsp; &#8595; </a>',
     subtitle: '',
     byline: '',
     footer: '<h4>Credits</h4><strong>Lead Contributors</strong>: Alan Boswell and Ulrich Eberle<br /><strong>Visualizations & Design</strong>: Paul Franz and Claire Boccon-Gibod<br /><strong>Support</strong>: Carolin Graf and Andrew Ciacci<br /><br /><h4>Data Sources</h4> <div class="data-sources"><a href="https://www.openstreetmap.org" target="_blank">OpenStreetMap</a><br /><a href="https://www.mapbox.com" target="_blank">Mapbox</a> and <a href="https://www.mapbox.com/community" target="_blank">Mapbox Community Team</a><br /><br /><a href="https://www.crisisgroup.org/legal" target="_blank">Privacy Policy & Legal</a></div>',
@@ -57,7 +57,7 @@ var config = {
           id: '01',
           alignment: 'left',
           hidden: false,
-          title: '',
+          title: ' ',
           image: '',
           description: 'South Sudan is emblematic of these compound risks, where floods are submerging large swathes of the country and displacing hundreds of thousands. In 2021 alone, over half a million people have been displaced. Humanitarian organization brace for another severe flood season, which has already begun, putting thousands of South Sudanese at the frontline of one of the world’s most overlooked climate disasters. This flooding has also helped drive conflict that has killed dozens (or hundreds?), hundreds of miles to the south.',
           location: {
@@ -109,7 +109,7 @@ var config = {
             id: '02',
             alignment: 'right',
             hidden: false,
-            title: '',
+            title: ' ',
             image: '',
             description: 'The flood’s impact was particularly severe in South Sudan’s central region, which witnessed abnormal flood intensity and duration in recent years. At the forefront are states, shown here with high flood intensity are the states Jonglei, Unity and Upper Nile.',
             location: {
@@ -163,7 +163,7 @@ var config = {
             hidden: false,
             title: '',
             image: '',
-            description: '<div class="padding"><h3><span style="background-color: #7e6059; font-weight: 600; border-radius: 8px; padding: 5px;">Disaster displacement</span></h3><h4>Flooding by Area (in km2) vs. Displaced Persons by Year</h4><p>Since 2020, the country has struggled with historic floods, putting persistent pressures on affected communities, driving internal displacement.</p></div>' + '<div class="flourish-embed flourish-table" data-src="visualisation/11009243" style="padding: 0;"></div>' + '<br />',
+            description: '<div class="padding"><h3><span style="background-color: #7e6059; font-size: 24px; font-weight: 600; border-radius: 8px; padding: 5px 10px 5px 10px;">Disaster displacement</span></h3><h4>Flooding by Area (in km2) vs. Displaced Persons by Year</h4><p>Since 2020, the country has struggled with historic floods, putting persistent pressures on affected communities, driving internal displacement.</p></div>' + '<div class="flourish-embed flourish-table" data-src="visualisation/11009243" style="padding: 0;"></div>' + '<br />',
             location: {
               center: [31.691412, 7.078249],
               zoom: 7.01,
@@ -191,7 +191,7 @@ var config = {
         },
         {
             id: '04',
-            alignment: 'left',
+            alignment: 'right',
             hidden: false,
             title: 'An anatomy of persistent flooding - Summer 2021',
             image: '',
@@ -232,7 +232,7 @@ var config = {
         },
         {
             id: '05',
-            alignment: 'left',
+            alignment: 'right',
             hidden: false,
             title: 'October to December 2021',
             image: '',
@@ -263,7 +263,7 @@ var config = {
         },
         {
             id: '06',
-            alignment: 'left',
+            alignment: 'right',
             hidden: false,
             title: 'Early 2022',
             image: '',
@@ -294,7 +294,7 @@ var config = {
         },
         {
             id: '07',
-            alignment: 'left',
+            alignment: 'right',
             hidden: false,
             title: 'Spring 2022',
             image: '',
@@ -347,9 +347,9 @@ var config = {
             id: '08',
             alignment: 'center',
             hidden: false,
-            title: '',
+            title: ' ',
             image: '',
-            description: 'Even typically dry months, like the low-water mark in April, witnessed substantial flooding in 2022. This can be seen in the greater magnitude of flooding between April-June 2022 than in 2020. Crisis Group’s empirical analysis reveals that the unprecedented duration and magnitude of the floods overwhelms local coping mechanism and prevents people from returning to their homes. In certain instances fuelling tensions with host communities.' + '<br /><br />' + 'In anticipation of continued catastrophe, UN OCHA released USD 19 million in May 2022 to protect affected regions, including the Bentiu camp for internally displaced people in Unity State.' + '<br /><br /><div class="video-container"><iframe src="https://crisisgroup.github.io/south-sudan/comparison.html" frameborder="0" scrolling="no" /></div>',
+            description: 'Even typically dry months, like the low-water mark in April, witnessed substantial flooding in 2022. This can be seen in the greater magnitude of flooding between April-June 2022 than in 2020. Crisis Group’s empirical analysis reveals that the unprecedented duration and magnitude of the floods overwhelms local coping mechanism and prevents people from returning to their homes. In certain instances fuelling tensions with host communities.' + '<br /><br />' + 'In anticipation of continued catastrophe, UN OCHA released USD 19 million in May 2022 to protect affected regions, including the Bentiu camp for internally displaced people in Unity State.' + '<br /><br /><div class="video-container"><iframe src="comparison.html" frameborder="0" scrolling="no" /></div>',
             location: {
               center: [31.03374, 7.20294],
               zoom: 7.01,
@@ -368,7 +368,7 @@ var config = {
         },
         {
             id: '09',
-            alignment: 'center',
+            alignment: 'full',
             hidden: false,
             title: '',
             image: '',
@@ -564,9 +564,9 @@ var config = {
             id: '11',
             alignment: 'left',
             hidden: false,
-            title: '',
+            title: ' ',
             image: '',
-            description: '<h2 class="liftout">Samuel and his group travelled hundreds of miles by foot and boat, losing cattle to disease and bandits. As he journeyed southward towards Bor Town, the depth of waters forced Samuel’s group to swim, while carrying children and shepherding the herd. At night Samuel’s party took refuge on higher ground, where flood water were less likely to be a threat.</h2>',
+            description: 'Samuel and his group travelled hundreds of miles by foot and boat, losing cattle to disease and bandits. As he journeyed southward towards Bor Town, the depth of waters forced Samuel’s group to swim, while carrying children and shepherding the herd. At night Samuel’s party took refuge on higher ground, where flood water were less likely to be a threat.',
             location: {
               center: [31.353, 6.905],
               zoom: 15,
@@ -645,7 +645,7 @@ var config = {
             id: '14',
             alignment: 'left',
             hidden: false,
-            title: '',
+            title: ' ',
             image: '',
             description: 'However, after eluding the floods Samuel found himself in a new form of danger shortly after arrival, as violence erupted after multiple herdsmen were reportedly kidnapped and attacked in cattle camps. Members of Samuel’s group retaliated by destroying the crops and homes of host communities. While Samuel states he was unarmed, most of his fellow herders carried weapons[, as he explains to “(...) to protect our cows.”]' + '<br /><br />' + 'Violence between IDPs and host communities is not uncommon. A majority of interviewees reported tensions between displaced herders and host communities, predominantly over land use, destruction caused by cattle and cattle theft, and political grievances, which were usually highest when they were near farms or rebel encampments.',
             location: {
@@ -708,11 +708,11 @@ var config = {
         },
         {
             id: '15',
-            alignment: 'center',
+            alignment: 'full',
             hidden: false,
             title: '',
             image: '',
-            description: '<h2 class="liftout">Last year, tensions spiked in particular around Kajo Keji, amplifying the intense grievances already driving an armed insurgency against the government.</h2>' + '<br /><br />' + '<h2 class="liftout">This year, tensions have erupted near the South Sudan - Uganda border Magwi, Nimule, pitting national elite against each other.</h2>' + '<br /><br />' + '<h2 class="liftout">National tensions are rising.</h2>',
+            description: '<h2 class="liftout">Last year, tensions spiked in particular around Kajo Keji, amplifying the intense grievances already driving an armed insurgency against the government.' + '<br /><br />' + 'This year, tensions have erupted near the South Sudan - Uganda border Magwi, Nimule, pitting national elite against each other.' + '<br /><br />' + 'National tensions are rising.</h2>',
             location: {
               center: [31.03374, 7.20294],
               zoom: 6.75,
@@ -802,7 +802,7 @@ var config = {
             id: 'END-02',
             alignment: 'left',
             hidden: false,
-            title: '',
+            title: ' ',
             image: '',
             description: 'While floods have been an instrumental driver of displacement and conflict in South Sudan, the region is also simultaneously experiencing other forms of climatic distress.' + '<br /><br />' + 'Since 2020, much of the eastern Horn of Africa has been marred by below-average rainfall, currently resulting in historic prolonged droughts, which follow the 2019 locust outbreak that strained farmers in the region. The March-May 2022 rainy season was exceptionally dry and there are elevated chances of a fifth drought for the upcoming October-December short wet season.' + '<br /><br />' + '<div class="video-container"><iframe src="https://flo.uri.sh/visualisation/11056737/embed" frameborder="0" scrolling="no"></iframe></div>',
             location: {
@@ -833,7 +833,7 @@ var config = {
             id: 'END-03',
             alignment: 'left',
             hidden: false,
-            title: '',
+            title: ' ',
             image: '',
             description: 'Just as local climate impacts can devolve into national catastrophe across the country, future disputes over resources due to weather and climate hazards have the potential to spiral into regional instability and crises. As global warming increases unabated, weather and climate extremes are likely to become more severe and frequent – bringing with it catastrophic consequences for peace and security.',
             location: {
