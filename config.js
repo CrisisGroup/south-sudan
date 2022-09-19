@@ -840,7 +840,8 @@ var config = {
               center: [31.73713, 7.21163],
               zoom: 5,
               pitch: 44.00,
-              bearing: 23.20
+              bearing: 23.20,
+              speed: .7
             },
             mapAnimation: 'flyTo',
             rotateAnimation: false,

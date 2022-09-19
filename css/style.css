@@ -78,7 +78,8 @@ a:hover, a:visited {
 
 @media (max-width: 1536px) {
     #header h1 {
-        margin: 3% auto 1%;
+        margin: 10% auto 1%;
+        font-size: 72px;
     }
 }
 
@@ -196,6 +197,12 @@ a:hover, a:visited {
 @media (max-width: 1920px) {
     #vidcredit {
         margin-top: 8%;
+    }
+}
+
+@media (max-width: 1566px) {
+    #vidcredit {
+        margin-top: 5%;
     }
 }
 
@@ -466,6 +473,7 @@ ul {
   font-weight: 400;
   font-size: small;
   margin-left: 35vw;
+  background-color: rgba(0,0,0,.4);
 }
 
 .legend h4 {
