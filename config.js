@@ -335,11 +335,6 @@ var config = {
                 layer: 'south_sudan',
                 duration: 4000,
                 opacity: 0
-              },
-              {
-                layer: 'sat-flood',
-                duration: 2000,
-                opacity: 0
               }
           ]
         },
@@ -360,10 +355,18 @@ var config = {
             rotateAnimation: false,
             callback: '',
             onChapterEnter: [
-
+              {
+                layer: 'sat-flood',
+                duration: 2000,
+                opacity: .6
+              }
             ],
             onChapterExit: [
-
+              {
+                layer: 'sat-flood',
+                duration: 2000,
+                opacity: 0
+              }
           ]
         },
         {
