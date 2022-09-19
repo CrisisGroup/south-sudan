@@ -82,14 +82,14 @@ width: 100%;
 }
 
 #header p.hedp {
-  text-align: left;
-  font-family: Georgia, serif;
-  color: #DFD7D5;
-  padding: 0 50% 0 10%;
-  font-size: 1.6em;
-  letter-spacing: .02em;
-  font-style: italic;
-  line-height: 1.5;
+    text-align: center;
+    font-family: 'franklin-gothic-urw', sans-serif;
+    color: #DFD7D5;
+    padding: 0 20% 0 20%;
+    font-size: 1.6em;
+    letter-spacing: .01em;
+    line-height: 1.5;
+    font-style: italic;
 }
 
 @media (max-width: 1920px) {
