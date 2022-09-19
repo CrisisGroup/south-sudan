@@ -5,7 +5,7 @@ body {
     overflow-x: hidden;
 }
 p {
-  font-size: 22px;
+  font-size: 20px;
   line-height: 1.3;
   color: #e4e4e4;
   margin-top: 8px;
@@ -37,36 +37,61 @@ a:hover, a:visited {
     letter-spacing: .1em;
     padding: 1vh 2vw;
     background: none;
-    /*
-    color: #E87722;
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 0.95) 100%), url('../images/header_bg2.jpg');
-    background-repeat: no-repeat;
-    background-opacity: .1;
-    background-size: cover;
-    background-position: 50% 0;  */
 }
 #header img {
   position: absolute;
-  top: 5%;
+  top: 3%;
   right: 5%;
-  height: 200px;
-  width: 200px;
+  height: 150px;
+  width: 150px;
+}
+
+@media (max-width: 768px) {
+    #header img {
+        height: 75px;
+        width: 75px;
+    }
+}
+
+@media (max-width: 425px) {
+    #header img {
+        height: 50px;
+        width: 50px;
+    }
 }
 
 #header h1, #header h2 {
   margin: 10% auto 1%;
-padding: 0 50% 0 10%;
-text-align: left;
-font-family: "franklin-gothic-urw", sans-serif;
-font-weight: 700;
-font-size: 82px;
-color: #DFD7D5;
-width: 100%;
+  text-align: center;
+  font-family: "franklin-gothic-urw", sans-serif;
+  font-weight: 700;
+  font-size: 82px;
+  color: #DFD7D5;
+  width: 100%;
 }
 
 @media (max-width: 1920px) {
     #header h1 {
-        margin: 2% auto 1%;
+        margin: 10% auto 1%;
+    }
+}
+
+@media (max-width: 1536px) {
+    #header h1 {
+        margin: 3% auto 1%;
+    }
+}
+
+@media (max-width: 1024px) {
+    #header h1 {
+        font-size: 54px;
+        margin: 15% auto 1%;
+    }
+}
+
+@media (max-width: 425px) {
+  #header h1 {
+        font-size: 32px;
     }
 }
 
@@ -85,7 +110,7 @@ width: 100%;
     text-align: center;
     font-family: 'franklin-gothic-urw', sans-serif;
     color: #DFD7D5;
-    padding: 0 20% 0 20%;
+    padding: 0 30% 0 30%;
     font-size: 1.6em;
     letter-spacing: .01em;
     line-height: 1.5;
@@ -94,11 +119,17 @@ width: 100%;
 
 @media (max-width: 1920px) {
     #header p.hedp {
-        font-size: 1.2em;
+        font-size: 1.4em;
     }
 }
 
-@media (max-width: 1440px) {
+@media (max-width: 1536px) {
+    #header p.hedp {
+        padding: 0 20% 0 20%;
+    }
+}
+
+@media (max-width: 1024px) {
     #header p.hedp {
         display: none;
     }
@@ -124,6 +155,68 @@ width: 100%;
                 display: none;
             }
         }
+
+        #freeExplore {
+              border: solid 2px #c0afa5;
+              color: #E1E0E0;
+              padding: 20px;
+              width: 150px;
+              text-align: center;
+              text-decoration: none;
+              display: inline-block;
+              font-size: 20px;
+              display: block;
+              margin: 2% auto auto;
+              font-family: "franklin-gothic-urw", sans-serif;
+              border-radius: 8px;
+        }
+        #freeExplore:hover {
+            background-color: #fff;
+            color: #000;
+            cursor: pointer;
+            transition: 1s;
+        }
+
+        #freeExplore.active {
+            background-color: #fff;
+            color: #000;
+        }
+
+        @media (max-width: 425px) {
+          #freeExplore {
+                display:none;
+            }
+        }
+
+#vidcredit {
+  margin-top: 10%;
+  font-size: 14px;
+}
+
+@media (max-width: 1920px) {
+    #vidcredit {
+        margin-top: 8%;
+    }
+}
+
+@media (max-width: 1366px) {
+    #vidcredit {
+        margin-top: 2%;
+    }
+}
+
+@media (max-width: 1024px) {
+    #vidcredit {
+        margin-top: 15%;
+    }
+}
+
+@media (max-width: 425px) {
+    #vidcredit {
+        font-size: 10px;
+    }
+}
+
 h2.liftout {
   font-size: 2.2em;
   font-family: "franklin-gothic-urw", sans-serif;
@@ -377,6 +470,7 @@ ul {
 
 .legend h4 {
     margin: 0 0 10px;
+    text-align: center;
 }
 
 ul.legend-ul {
@@ -419,37 +513,6 @@ ul.legend-ul li {
     margin-right: 5px;
 }
 
-#freeExplore {
-      border: solid 2px #c0afa5;
-      color: #E1E0E0;
-      padding: 20px;
-      width: 150px;
-      text-align: center;
-      text-decoration: none;
-      display: inline-block;
-      font-size: 20px;
-      display: block;
-      margin: 4% 10%;
-      font-family: "franklin-gothic-urw", sans-serif;
-      border-radius: 8px;
-}
-#freeExplore:hover {
-    background-color: #fff;
-    color: #000;
-    cursor: pointer;
-    transition: 1s;
-}
-
-#freeExplore.active {
-    background-color: #fff;
-    color: #000;
-}
-
-@media (max-width: 1920px) {
-    #freeExplore {
-        margin: 5% 10%;
-    }
-}
 
 /* Fix issue on mobile browser where scroll breaks  */
 .mapboxgl-canvas-container.mapboxgl-touch-zoom-rotate.mapboxgl-touch-drag-pan,
