@@ -198,7 +198,7 @@ var config = {
             description: 'In 2021, starting from a high baseline following the lean season, flood levels increased rapidly during the period of July to September.',
             location: {
               center: [31.03374, 7.20294],
-              zoom: 7.01,
+              zoom: 6.25,
               pitch: 40.50,
               bearing: 12
             },
