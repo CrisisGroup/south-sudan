@@ -1,5 +1,5 @@
 var config = {
-    style: 'mapbox://styles/daltonwb/cl7xweea2002i15mksobeiuww',
+    style: 'mapbox://styles/daltonwb/cl88z4rxj001o14n30juwgg3p',
     accessToken: 'pk.eyJ1IjoiZGFsdG9ud2IiLCJhIjoiOWdSSXFQSSJ9.HZyjh4g3TAAOAncwelv9Vw',
     showMarkers: false,
     markerColor: '#3FB1CE',
@@ -163,7 +163,7 @@ var config = {
             hidden: false,
             title: '',
             image: '',
-            description: '<div class="padding"><h3><span style="background-color: #7e6059; font-size: 24px; font-weight: 600; border-radius: 8px; padding: 5px 10px 5px 10px;">Disaster displacement</span></h3><h4>Flooding by Area (in km2) vs. Displaced Persons by Year</h4><p>Since 2020, the country has struggled with historic floods, putting persistent pressures on affected communities, driving internal displacement.</p></div>' + '<div class="flourish-embed flourish-table" data-src="visualisation/11009243" style="padding: 0;"></div>' + '<br />',
+            description: '<div class="padding"><h3><span style="background-color: #7e6059; font-size: 24px; font-weight: 600; border-radius: 8px; padding: 5px 10px 5px 10px;">Disaster displacement</span></h3><h4>Flooding by Area (in km2) vs. Displaced Persons by Year</h4><p>Since 2020, the country has struggled with historic floods, putting persistent pressures on affected communities, driving internal displacement.</p></div>' + '<div class="flourish-embed flourish-table" data-src="visualisation/11009243"></div>' + '<br />',
             location: {
               center: [31.691412, 7.078249],
               zoom: 7.01,
@@ -682,7 +682,7 @@ var config = {
             hidden: false,
             title: '',
             image: '',
-            description: '<div class="video-container"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/B3PjuunEYP4" frameBorder="0" allowfullscreen></iframe></div>',
+            description: '<div class="video-container"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/4ByE3EQzTbI" frameBorder="0" scrolling="no" allowfullscreen></iframe></div>',
             location: {
               center: [31.285, 4.079],
               zoom: 19,

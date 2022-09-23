@@ -202,7 +202,7 @@ a:hover, a:visited {
 
 @media (max-width: 1566px) {
     #vidcredit {
-        margin-top: 5%;
+        margin-top: 3%;
     }
 }
 
@@ -213,8 +213,22 @@ a:hover, a:visited {
 }
 
 @media (max-width: 1024px) {
+    #freeExplore {
+        font-size: 16px;
+        width: 100px;
+        margin-top: 5%;
+    }
+}
+
+@media (max-width: 1024px) {
     #vidcredit {
         margin-top: 15%;
+    }
+}
+
+@media (max-width: 768px) {
+    #vidcredit {
+        margin-top: 12%;
     }
 }
 
@@ -358,6 +372,7 @@ h5 {
 #chart03 .light {
   background-image: none;
   background-color: #5f3830;
+  width: 60vw;
 }
 
 #NARRATIVE-1 .light {
