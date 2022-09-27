@@ -1,5 +1,5 @@
 var config = {
-    style: 'mapbox://styles/daltonwb/cl88z4rxj001o14n30juwgg3p',
+    style: 'mapbox://styles/daltonwb/cl8klyiq2000x14mpf8i5xhzd',
     accessToken: 'pk.eyJ1IjoiZGFsdG9ud2IiLCJhIjoiOWdSSXFQSSJ9.HZyjh4g3TAAOAncwelv9Vw',
     showMarkers: false,
     markerColor: '#3FB1CE',
@@ -114,7 +114,7 @@ var config = {
             description: 'The flood’s impact was particularly severe in South Sudan’s central region, which witnessed abnormal flood intensity and duration in recent years. At the forefront are states, shown here with high flood intensity are the states Jonglei, Unity and Upper Nile.',
             location: {
               center: [31.691412, 7.078249],
-              zoom: 7.01,
+              zoom: 6,
               pitch: 42,
               bearing: -20.80,
               speed: .1
@@ -198,7 +198,7 @@ var config = {
             description: 'In 2021, starting from a high baseline following the lean season, flood levels increased rapidly during the period of July to September.',
             location: {
               center: [31.03374, 7.20294],
-              zoom: 6.25,
+              zoom: 6,
               pitch: 40.50,
               bearing: 12
             },
@@ -239,7 +239,7 @@ var config = {
             description: 'Flood levels peaked in October, reaching their maximal extent across the country, particularly concentrated in South Sudan’s central regions.',
             location: {
               center: [31.03374, 7.20294],
-              zoom: 7.01,
+              zoom: 6,
               pitch: 40.50,
               bearing: 12
             },
@@ -270,7 +270,7 @@ var config = {
             description: 'Unlike usual years, the floods did not recede by the first months of 2022, which kept areas inaccessible as waters were unable to recede, setting the foundation for another severe flood season ahead.',
             location: {
               center: [31.03374, 7.20294],
-              zoom: 7.01,
+              zoom: 6,
               pitch: 40.50,
               bearing: 12
             },
@@ -301,7 +301,7 @@ var config = {
             description: 'With soaked soils unable to retain more water, minimal additional rains over the coming months have the potential to induce further catastrophic flooding.',
             location: {
               center: [31.03374, 7.20294],
-              zoom: 7.01,
+              zoom: 6,
               pitch: 40.50,
               bearing: 12
             },
@@ -347,7 +347,7 @@ var config = {
             description: 'Even typically dry months, like the low-water mark in April, witnessed substantial flooding in 2022. This can be seen in the greater magnitude of flooding between April-June 2022 than in 2020. Crisis Group’s empirical analysis reveals that the unprecedented duration and magnitude of the floods overwhelms local coping mechanism and prevents people from returning to their homes. In certain instances fuelling tensions with host communities.' + '<div class="spacer"></div>' + 'In anticipation of continued catastrophe, UN OCHA released USD 19 million in May 2022 to protect affected regions, including the Bentiu camp for internally displaced people in Unity State.' + '<br /><br /><div class="video-container"><iframe src="comparison.html" frameborder="0" scrolling="no" /></div>',
             location: {
               center: [31.03374, 7.20294],
-              zoom: 7.01,
+              zoom: 6,
               pitch: 40.50,
               bearing: 12
             },
@@ -378,7 +378,7 @@ var config = {
             description: '<h2 class="liftout">Crisis Group tracked herders displaced by floods who later got caught up in violent attacks with the local communities. Many of them have been unable to return home until the floods recede further. <span style="background-color: #E87722; font-weight: 600; border-radius: 8px; padding: 5px;"><em>Herders uprooted by three straight years</em></span> of catastrophic flooding are clashing with populations in the country’s south, who are trying to force them to return home. Heavily armed, the herders moved south from Jonglei, the epicenter of the Nile water floods, to the Equatoria region, where local communities have also formed armed local militias to push out the displaced.</h2>',
             location: {
               center: [31.03374, 7.20294],
-              zoom: 6.75,
+              zoom: 6,
               pitch: 40.50,
               bearing: 12
             },
