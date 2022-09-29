@@ -389,7 +389,6 @@ h5 {
 .light {
   color: #444;
   background-color: #5f3830;
-  background-image: url('../images/dust_transparent.png');
 }
 
 #INTRO .light {
@@ -420,9 +419,20 @@ h5 {
   padding: 5% 20%;
 }
 
+#ch10 .light {
+  padding: 0 50px 5px 50px;
+}
+
 #chart03 .light {
   padding: 0;
   width: 60vw;
+}
+
+.photocaption {
+	font-size: 0.8em;
+	line-height: 24px;
+	letter-spacing: .02em;
+	display: block;
 }
 
 #END-02 .light {

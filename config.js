@@ -1,5 +1,5 @@
 var config = {
-    style: 'mapbox://styles/daltonwb/cl8klyiq2000x14mpf8i5xhzd',
+    style: 'mapbox://styles/daltonwb/cl8lv82ts000e14pojetu7mph',
     accessToken: 'pk.eyJ1IjoiZGFsdG9ud2IiLCJhIjoiOWdSSXFQSSJ9.HZyjh4g3TAAOAncwelv9Vw',
     showMarkers: false,
     markerColor: '#3FB1CE',
@@ -393,15 +393,15 @@ var config = {
           ]
         },
         {
-            id: '10',
+            id: 'ch10',
             alignment: 'left',
             hidden: false,
-            title: 'Sam’s Journey',
-            image: '',
-            description: 'The impact of the flooding was witnessed early on and persists today. For instance, the unexpected June 2020 flooding took many by surprise. Among them is Samuel, a cattle herder based with his family around Maar in Jonglei, who were displaced together with over 50 other families and several thousand of cattle.' + '<div class="spacer"></div>' + 'According to interviewees, floods have been cited as a main driver of internal displacement in 2020. Displacement triggers are oftentimes complex and multifaceted, with interviewees frequently also citing insecurity and cattle disease.' + '<div class="spacer"></div>' + 'The flood devastated his community – leaving no pasture for grazing, destroying homes, and killing cattle due to increased water levels and diseases – all of which were compounded by insecurity from raids.',
+            title: '',
+            image: 'images/sam_poster.jpg',
+            description: '<p class="photocaption">Old Fangkak, South Sudan - Villagers dig out of flooding that hit the region in March 2022. (Photo: UNCHR)</p>' + '<h3>Sam’s Journey</h3>' + 'The impact of the flooding was witnessed early on and persists today. For instance, the unexpected June 2020 flooding took many by surprise. Among them is Samuel, a cattle herder based with his family around Maar in Jonglei, who were displaced together with over 50 other families and several thousand of cattle.' + '<div class="spacer"></div>' + 'According to interviewees, floods have been cited as a main driver of internal displacement in 2020. Displacement triggers are oftentimes complex and multifaceted, with interviewees frequently also citing insecurity and cattle disease.' + '<div class="spacer"></div>' + 'The flood devastated his community – leaving no pasture for grazing, destroying homes, and killing cattle due to increased water levels and diseases – all of which were compounded by insecurity from raids.',
             location: {
               center: [31.976400, 5.300356],
-              zoom: 8.30,
+              zoom: 7.75,
               pitch: 46,
               bearing: -15.19
             },
@@ -571,10 +571,10 @@ var config = {
             image: '',
             description: 'Samuel and his group travelled hundreds of miles by foot and boat, losing cattle to disease and bandits. As he journeyed southward towards Bor Town, the depth of waters forced Samuel’s group to swim, while carrying children and shepherding the herd. At night Samuel’s party took refuge on higher ground, where flood water were less likely to be a threat.',
             location: {
-              center: [31.353, 6.905],
-              zoom: 15,
-              pitch: 45,
-              bearing: 0
+              center: [31.51148, 6.21925],
+              zoom: 14.11,
+              pitch: 65.00,
+              bearing: 116.03
             },
             mapAnimation: 'flyTo',
             rotateAnimation: false,
@@ -584,10 +584,19 @@ var config = {
                 layer: 'satellite',
                 duration: 2000,
                 opacity: 1
-              }
+              },
+              {
+          			layer: 'bor2',
+          			duration: 4000,
+          			opacity: 1
+          		}
             ],
             onChapterExit: [
-
+              {
+                layer: 'bor2',
+                duration: 4000,
+                opacity: 0
+              }
           ]
         },
         {
@@ -598,10 +607,10 @@ var config = {
             image: '',
             description: 'The trip reached a dangerous climax when Samuel was forced to embark his cattle on boats to cross the river before reaching Juba – which took all night and a day. During the crossing, he vigilant guarded his livestock, as pirates have been known to raid helpless rafters.',
             location: {
-              center: [31.55177, 6.20829],
-              zoom: 15,
-              pitch: 45,
-              bearing: 0
+              center: [31.62268, 4.84110],
+              zoom: 16.44,
+              pitch: 45.00,
+              bearing: -9.56
             },
             mapAnimation: 'flyTo',
             rotateAnimation: false,
@@ -659,7 +668,7 @@ var config = {
             },
             mapAnimation: 'flyTo',
             rotateAnimation: false,
-            callback: '',
+            callback: 'rotateData',
             onChapterEnter: [
               {
                 layer: 'idp-map',
@@ -682,7 +691,7 @@ var config = {
             hidden: false,
             title: '',
             image: '',
-            description: '<div class="video-container"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/4ByE3EQzTbI" frameBorder="0" scrolling="no" allowfullscreen></iframe></div>',
+            description: '<div class="video-container"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/0fkDGUJ6N_o" frameBorder="0" scrolling="no" allowfullscreen></iframe></div>',
             location: {
               center: [31.285, 4.079],
               zoom: 19,
@@ -747,7 +756,7 @@ var config = {
             },
             mapAnimation: 'flyTo',
             rotateAnimation: false,
-            callback: '',
+            callback: 'disableFreetime',
             onChapterEnter: [
 
             ],
@@ -810,13 +819,13 @@ var config = {
             description: 'While floods have been an instrumental driver of displacement and conflict in South Sudan, the region is also simultaneously experiencing other forms of climatic distress.' + '<div class="spacer"></div>' + 'Since 2020, much of the eastern Horn of Africa has been marred by below-average rainfall, currently resulting in historic prolonged droughts, which follow the 2019 locust outbreak that strained farmers in the region. The March-May 2022 rainy season was exceptionally dry and there are elevated chances of a fifth drought for the upcoming October-December short wet season.' + '<div class="spacer"></div>' + '<div class="video-container"><iframe src="https://flo.uri.sh/visualisation/11056737/embed" frameborder="0" scrolling="no"></iframe></div>',
             location: {
               center: [31.73713, 7.21163],
-              zoom: 5.64,
+              zoom: 5,
               pitch: 44.00,
               bearing: 23.20
             },
             mapAnimation: 'flyTo',
             rotateAnimation: false,
-            callback: '',
+            callback: 'enableFreetime',
             onChapterEnter: [
               {
                 layer: 'dryness',
@@ -848,7 +857,7 @@ var config = {
             },
             mapAnimation: 'flyTo',
             rotateAnimation: false,
-            callback: '',
+            callback: 'enableFreetime',
             onChapterEnter: [
               {
                 layer: 'fatalities',
