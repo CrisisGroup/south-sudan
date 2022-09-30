@@ -1,5 +1,5 @@
 var config = {
-    style: 'mapbox://styles/daltonwb/cl8lv82ts000e14pojetu7mph',
+    style: 'mapbox://styles/daltonwb/cl8onfxtn004w15qlvkpnswfy',
     accessToken: 'pk.eyJ1IjoiZGFsdG9ud2IiLCJhIjoiOWdSSXFQSSJ9.HZyjh4g3TAAOAncwelv9Vw',
     showMarkers: false,
     markerColor: '#3FB1CE',
@@ -370,6 +370,37 @@ var config = {
           ]
         },
         {
+            id: '08B',
+            alignment: 'center',
+            hidden: false,
+            title: ' ',
+            image: '',
+            description: 'Here is the same period of comparison in September.' + '<br /><br /><div class="video-container"><iframe src="comparison2.html" frameborder="0" scrolling="no" /></div>',
+            location: {
+              center: [31.03374, 7.20294],
+              zoom: 6,
+              pitch: 40.50,
+              bearing: 12
+            },
+            mapAnimation: 'flyTo',
+            rotateAnimation: false,
+            callback: '',
+            onChapterEnter: [
+              {
+                layer: 'sat-flood',
+                duration: 2000,
+                opacity: .6
+              }
+            ],
+            onChapterExit: [
+              {
+                layer: 'sat-flood',
+                duration: 2000,
+                opacity: 0
+              }
+          ]
+        },
+        {
             id: '09',
             alignment: 'full',
             hidden: false,
@@ -634,10 +665,10 @@ var config = {
             image: '',
             description: 'After crossing the White Nile and arriving in Juba, Samuel and his group disembarked and continued the journey for several days, finally settling in the bushes near other cattle camps that the floods haven’t reached. Samuel explains his decision to settle: “There is no flood here. That is the only reason.” [Other interviewees also cited an improved security situation, better cattle health and pastures as reasons to stay in Equatoria.]',
             location: {
-              center: [31.55177, 6.20829],
-              zoom: 15,
-              pitch: 45,
-              bearing: 0
+              center: [31.58919, 4.82295],
+              zoom: 14.12,
+              pitch: 50.64,
+              bearing: 26.01
             },
             mapAnimation: 'flyTo',
             rotateAnimation: false,
@@ -647,10 +678,19 @@ var config = {
                 layer: 'satellite',
                 duration: 2000,
                 opacity: 1
+              },
+              {
+                layer: 'sam_label5',
+                duration: 4000,
+                opacity: 1
               }
             ],
             onChapterExit: [
-
+              {
+                layer: 'sam_label5',
+                duration: 4000,
+                opacity: 0
+              }
           ]
         },
         {
@@ -661,10 +701,10 @@ var config = {
             image: '',
             description: 'However, after eluding the floods Samuel found himself in a new form of danger shortly after arrival, as violence erupted after multiple herdsmen were reportedly kidnapped and attacked in cattle camps. Members of Samuel’s group retaliated by destroying the crops and homes of host communities. While Samuel states he was unarmed, most of his fellow herders carried weapons[, as he explains to “(...) to protect our cows.”]' + '<div class="spacer"></div>' + 'Violence between IDPs and host communities is not uncommon. A majority of interviewees reported tensions between displaced herders and host communities, predominantly over land use, destruction caused by cattle and cattle theft, and political grievances, which were usually highest when they were near farms or rebel encampments.',
             location: {
-              center: [31.285, 4.079],
-              zoom: 17,
-              pitch: 60.63,
-              bearing: -79.39
+              center: [31.42253, 4.25150],
+              zoom: 12.15,
+              pitch: 44.13,
+              bearing: 0.00
             },
             mapAnimation: 'flyTo',
             rotateAnimation: false,
@@ -693,10 +733,10 @@ var config = {
             image: '',
             description: '<div class="video-container"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/0fkDGUJ6N_o" frameBorder="0" scrolling="no" allowfullscreen></iframe></div>',
             location: {
-              center: [31.285, 4.079],
-              zoom: 19,
-              pitch: 60.63,
-              bearing: -79.39,
+              center: [31.42253, 4.25150],
+              zoom: 15,
+              pitch: 44.13,
+              bearing: 0.00,
               speed: 1.5
             },
             mapAnimation: 'flyTo',
@@ -715,7 +755,11 @@ var config = {
               }
             ],
             onChapterExit: [
-
+              {
+                layer: 'satellite',
+                duration: 2000,
+                opacity: 0
+              }
           ]
         },
         {

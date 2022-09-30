@@ -90,7 +90,7 @@
 	height: 15px;
 	width: 2px;
 	top: 3px;
-	background-color: rgba(128,128,128,1);
+	background-color: #fff;
 }
 .cn-close-icon:before {
 	transform: rotate(45deg);

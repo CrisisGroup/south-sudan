@@ -117,20 +117,16 @@
 <div id='ch4legend' class='legend'>
 <h4>Flood intensity, months per season with flooding</h4>
 <ul class='legend-ul'>
-	<li><div><span style='background-color: #bdc2ca'></span>Area flooded for 1 of 3 months </div></li>
-	<li><div><span style='background-color: #84b6da'></span>Area flooded for 2 of 3 months </div></li>
-<li><div><span style='background-color: #1074bc'></span>Flooded all season </div></li>
+	<li><div><span style='background-color: #525963'></span>Area flooded for 1 of 3 months </div></li>
+	<li><div><span style='background-color: #7ca3bf'></span>Area flooded for 2 of 3 months </div></li>
+<li><div><span style='background-color: #1f6ea7'></span>Flooded all season </div></li>
 </ul>
 </div>
 
 <div id='ch8legend' class='legend'>
 	<h4>Flood intensity, days per month with flooding</h4>
 <ul class='legend-ul'>
-	<li><div><span style='background-color: #b6edf0'></span> 1 - 6</div></li>
-	<li><div><span style='background-color: #74b4e8'></span> 7 - 12</div></li>
-	<li><div><span style='background-color: #1f83e0'></span> 13 - 18</div></li>
-<li><div><span style='background-color: #1d44b8'></span> 19 - 24</div></li>
-<li><div><span style='background-color: #090991'></span> 25 - 30</div></li>
+	<li><div><span style='background-color: #73a2e8'></span> Flooded Areas</div></li>
 </ul>
 </div>
 
@@ -402,7 +398,7 @@
 				 		           } else
 				 		                $("#ch4legend").hide("fast");
 
-												if (chapterid == "08") {
+												if ((chapterid == "08" || chapterid == "08B")) {
 				 		                $("#ch8legend").show("slow");
 				 		           } else
 				 		                $("#ch8legend").hide("fast");
