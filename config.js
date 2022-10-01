@@ -131,7 +131,7 @@ var config = {
               {
                 layer: 'idp-map',
                 duration: 4000,
-                opacity: .4
+                opacity: .7
               },
               {
                 layer: 'south_sudan',
@@ -833,7 +833,7 @@ var config = {
               {
                 layer: 'horn_idp',
                 duration: 2000,
-                opacity: .9
+                opacity: 1
               },
               {
                 layer: 'horn-label',
