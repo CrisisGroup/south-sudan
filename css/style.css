@@ -489,7 +489,7 @@ ul {
 @media (max-width: 750px) {
     .centered, .lefty, .righty, .fully {
         width: 90vw;
-        margin: 0 auto;
+        margin: 140% auto;
     }
 }
 
