@@ -395,6 +395,18 @@ h5 {
   margin-top: 50%;
 }
 
+@media (max-width: 425px) {
+  #INTRO {
+    margin-top: 0 !important;
+  }
+}
+
+@media (max-width: 425px) {
+  #INTRO .light {
+    margin-top: 0 !important;
+  }
+}
+
 #chart03 .light {
   background-image: none;
   background-color: #5f3830;
@@ -524,6 +536,12 @@ ul {
   font-family: "franklin-gothic-urw", sans-serif;
   font-weight: 400;
   margin-left: 35vw;
+}
+
+@media (max-width: 425px) {
+    .legend {
+        z-index: 0;
+    }
 }
 
 .black {
