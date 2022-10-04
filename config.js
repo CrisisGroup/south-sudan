@@ -163,7 +163,7 @@ var config = {
             hidden: false,
             title: '',
             image: '',
-            description: '<div class="padding"><h3><span style="background-color: #7e6059; font-size: 24px; font-weight: 600; border-radius: 8px; padding: 5px 10px 5px 10px;">Disaster displacement</span></h3><h4>Flooding by Area (in km2) vs. Displaced Persons by Year</h4><p>Since 2020, the country has struggled with historic floods, putting persistent pressures on affected communities, driving internal displacement.</p></div>' + '<div class="flourish-embed flourish-table" data-src="visualisation/11009243"></div>' + '<br />',
+            description: '<div class="padding"><h3 class="white"><span style="background-color: #7e6059; font-size: 24px; font-weight: 600; border-radius: 8px; padding: 5px 10px 5px 10px;">Disaster displacement</span></h3><h4>Flooding by Area (in km2) vs. Displaced Persons by Year</h4><p>Since 2020, the country has struggled with historic floods, putting persistent pressures on affected communities, driving internal displacement.</p></div>' + '<div class="flourish-embed flourish-table" data-src="visualisation/11009243"></div>' + '<br />',
             location: {
               center: [31.691412, 7.078249],
               zoom: 7.01,
@@ -406,7 +406,7 @@ var config = {
             hidden: false,
             title: '',
             image: '',
-            description: '<h2 class="liftout">Crisis Group tracked herders displaced by floods who later got caught up in violent attacks with the local communities. Many of them have been unable to return home until the floods recede further. <span style="background-color: #E87722; font-weight: 600; border-radius: 8px; padding: 5px;"><em>Herders uprooted by three straight years</em></span> of catastrophic flooding are clashing with populations in the country’s south, who are trying to force them to return home. Heavily armed, the herders moved south from Jonglei, the epicenter of the Nile water floods, to the Equatoria region, where local communities have also formed armed local militias to push out the displaced.</h2>',
+            description: '<h2 class="liftout">Crisis Group tracked herders displaced by floods who later got caught up in violent attacks with the local communities. Many of them have been unable to return home until the floods recede further. <br /><br /><span style="background-color: #E87722; font-weight: 700; border-radius: 8px; padding: 3px 18px 3px 18px;"><em>Herders uprooted by three straight years</em></span> of catastrophic flooding are clashing with populations in the country’s south, who are trying to force them to return home. Heavily armed, the herders moved south from Jonglei, the epicenter of the Nile water floods, to the Equatoria region, where local communities have also formed armed local militias to push out the displaced.</h2>',
             location: {
               center: [31.03374, 7.20294],
               zoom: 6,

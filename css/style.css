@@ -251,19 +251,45 @@ h2.liftout {
   font-size: 2.2em;
   font-family: "franklin-gothic-urw", sans-serif;
   letter-spacing: 1px;
-  font-weight: 400;
+  font-weight: 500;
+  padding: 5% 15%;
+  line-height: 1.5em;
 }
-@media (max-width: 500px) {
+
+@media (max-width: 1440px) {
     h2.liftout {
-        font-size: 1.6em;
+        font-size: 1.8em;
+        padding: 5% 13%;
     }
 }
+
+@media (max-width: 1024px) {
+    h2.liftout {
+        font-size: 1.6em;
+        padding: 5% 10%;
+    }
+}
+
+@media (max-width: 768px) {
+    h2.liftout {
+        font-size: 1.3em;
+        padding: 5% 8%;
+    }
+}
+
+@media (max-width: 425px) {
+    h2.liftout {
+        font-size: 1em;
+        padding: 5% 1%;
+    }
+}
+
 h3 {
   font-family: "franklin-gothic-urw", sans-serif;
   font-size: 24px;
   font-weight: bold;
   letter-spacing: 1px;
-  color: #e4e4e4;
+  color: #E87722;
   margin-bottom: 0;
   line-height: 1.2em;
 }
@@ -486,6 +512,12 @@ h5 {
     line-height: 25px;
     font-size: 13px;
 }
+
+@media (max-width: 425px) {
+  .step div {
+      padding:  5px 20px;
+  }
+}
 ul {
     list-style-type: square;
 }
@@ -535,7 +567,14 @@ ul {
   z-index: 1;
   font-family: "franklin-gothic-urw", sans-serif;
   font-weight: 400;
-  margin-left: 35vw;
+}
+
+.left-legend {
+  right: 0;
+}
+
+.right-legend {
+  left: 0;
 }
 
 @media (max-width: 425px) {
@@ -544,13 +583,16 @@ ul {
     }
 }
 
-.black {
-  color: #000;
+.blackshadow {
+    text-shadow: 0 0 4px #000000;
+}
+
+.white {
+  color: #fff;
 }
 
 .legend h4 {
     margin: 0 0 10px;
-    text-align: center;
 }
 
 ul.legend-ul {
