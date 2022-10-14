@@ -73,7 +73,7 @@ a:hover, a:visited {
 @media (max-width: 1920px) {
     #header h1 {
         margin: 10% auto 1%;
-        width: 100%;
+        width: 85%;
     }
 }
 
@@ -81,6 +81,7 @@ a:hover, a:visited {
     #header h1 {
         margin: 10% auto 1%;
         font-size: 72px;
+        width: 100%;
     }
 }
 
@@ -97,10 +98,9 @@ a:hover, a:visited {
     }
 }
 
-
 @media (max-width: 425px) {
   #header h1 {
-        font-size: 32px;
+        font-size: 26px;
     }
 }
 
@@ -257,7 +257,7 @@ h2.liftout {
   line-height: 1.5em;
 }
 
-@media (max-width: 1440px) {
+@media (max-width: 1536px) {
     h2.liftout {
         font-size: 1.2em;
         padding: 5% 13%;
@@ -266,21 +266,20 @@ h2.liftout {
 
 @media (max-width: 1024px) {
     h2.liftout {
-        font-size: 1.6em;
+        font-size: 1em;
         padding: 5% 10%;
     }
 }
 
 @media (max-width: 768px) {
     h2.liftout {
-        font-size: 1.3em;
+        font-size: 0.8em;
         padding: 5% 8%;
     }
 }
 
 @media (max-width: 425px) {
     h2.liftout {
-        font-size: 1em;
         padding: 5% 1%;
     }
 }
@@ -359,10 +358,15 @@ h5 {
     font-size: 13px;
     position: relative;
     z-index: 5;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 0.95) 100%), url('../images/sudan_bg.jpg');
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    background-opacity: .1;
+    background-size: cover;
 }
 #features {
     padding-top: 20vh;
-    padding-bottom: 10vh;
+    /* padding-bottom: 10vh; */
 }
 .hidden {
     visibility: hidden;
@@ -440,7 +444,19 @@ h5 {
   width: 60vw;
 }
 
-#NARRATIVE-1 .light, #NARRATIVE-END .light {
+#VIDEO {
+  padding-bottom: 0 !important;
+}
+
+#VIDEO .light {
+  background-image: url('../images/sudan_bg.jpg');
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  background-opacity: .1;
+  background-size: cover;
+}
+
+#NARRATIVE-1 .light {
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 0.95) 100%), url('../images/sudan_bg.jpg');
   background-repeat: no-repeat;
   background-position: 50% 0;
@@ -451,6 +467,19 @@ h5 {
 
 #NARRATIVE-3 .light {
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 0.95) 100%), url('../images/sudan_bg.jpg');
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  background-opacity: .1;
+  background-size: cover;
+  padding: 5% 20%;
+}
+
+#NARRATIVE-END {
+  padding-bottom: 0 !important;
+}
+
+#NARRATIVE-END .light {
+  background-image: url('../images/sudan_bg.jpg');
   background-repeat: no-repeat;
   background-position: 50% 0;
   background-opacity: .1;

@@ -43,6 +43,11 @@ var config = {
               layer: 'south_sudan',
               duration: 4000,
               opacity: 0
+            },
+            {
+              layer: 'satellite',
+              duration: 2000,
+              opacity: 0
             }
           ],
           onChapterExit: [
@@ -59,7 +64,7 @@ var config = {
           hidden: false,
           title: ' ',
           image: '',
-          description: 'South Sudan is emblematic of these compound risks, where floods are submerging large swathes of the country and displacing hundreds of thousands. In 2021 alone, over half a million people have been displaced. Humanitarian organization brace for another severe flood season, which has already begun, putting thousands of South Sudanese at the frontline of one of the world’s most overlooked climate disasters. This flooding has also helped drive conflict that has killed dozens (or hundreds?), hundreds of miles to the south.' + '<h3>Flood Affected People by State</h3><div class="video-container"><iframe src="https://flo.uri.sh/visualisation/11468795/embed" title="Interactive or visual content" class="flourish-embed-iframe" frameborder="0" scrolling="no" sandbox="allow-same-origin allow-forms allow-scripts allow-downloads allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation"></iframe></div>',
+          description: 'South Sudan is emblematic of these compound risks, where floods are submerging large swathes of the country and displacing hundreds of thousands. In 2021 alone, over half a million people have been displaced. Humanitarian organization brace for another severe flood season, which has already begun, putting thousands of South Sudanese at the frontline of one of the world’s most overlooked climate disasters. This flooding has also helped drive conflict that has killed dozens (or hundreds?), hundreds of miles to the south.' + '<div class="video-container"><iframe src="https://flo.uri.sh/visualisation/11468795/embed" title="Interactive or visual content" class="flourish-embed-iframe" frameborder="0" scrolling="no" sandbox="allow-same-origin allow-forms allow-scripts allow-downloads allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation"></iframe></div>',
           location: {
             center: [28.21862, 7.51420],
             zoom: 5.79,
@@ -374,7 +379,7 @@ var config = {
             hidden: false,
             title: ' ',
             image: '',
-            description: 'Here is the same period of comparison in September.' + '<br /><br /><div class="video-container"><iframe src="comparison2.html" frameborder="0" scrolling="no" /></div>',
+            description: 'Here is the same period of comparison in September.' + '<br /><br /><div class="video-container"><iframe src="comparison.html" frameborder="0" scrolling="no" /></div>',
             location: {
               center: [31.03374, 7.20294],
               zoom: 6,
@@ -725,7 +730,7 @@ var config = {
           ]
         },
         {
-            id: '14-VIDEO',
+            id: 'VIDEO',
             alignment: 'full',
             hidden: false,
             title: '',
@@ -762,40 +767,18 @@ var config = {
           ]
         },
         {
-            id: '15',
-            alignment: 'full',
-            hidden: false,
-            title: '',
-            image: '',
-            description: '<h2 class="liftout">Last year, tensions spiked in particular around Kajo Keji, amplifying the intense grievances already driving an armed insurgency against the government.' + '<div class="spacer"></div>' + 'This year, tensions have erupted near the South Sudan - Uganda border Magwi, Nimule, pitting national elite against each other.' + '<div class="spacer"></div>' + 'National tensions are rising.</h2>',
-            location: {
-              center: [31.03374, 7.20294],
-              zoom: 6.75,
-              pitch: 40.50,
-              bearing: 12
-            },
-            mapAnimation: 'flyTo',
-            rotateAnimation: false,
-            callback: '',
-            onChapterEnter: [
-
-            ],
-            onChapterExit: [
-
-          ]
-        },
-        {
             id: 'NARRATIVE-1',
             alignment: 'full',
             hidden: false,
             title: 'Conflict in Equatoria',
             image: '',
-            description: 'The South Sudanese conflict dynamic is unusual for the region. It flips the standard script about farmer-herder violence on its head. In South Sudan, the dominant political elite hail from pastoral communities, namely the Dinka and Nuer groups, rather than predominantly farming communities, which historically hold power across much of the post-colonial Sahel. In South Sudan, arms flow directly from the elite in the state security services to the cattle herders on the ground. The predominantly farming communities, on the other hand, have less access to state resources, state power and state guns.' + '<div class="spacer"></div>' + 'Over decades, occasional floods and the allure of better grazing ground, as well as the quiet backing of key political figures, have pushed and pulled ethnic Dinka to Equatoria. Anger at these newcomers for arriving and appropriating local resources without permission has been a unifying theme over generations among the region’s diverse communities , most of which rely heavily on agriculture for their livelihoods.' + '<div class="spacer"></div>' + 'Tensions within South Sudan continued to percolate after the 2005 peace deal that ended a long-running insurgency and paved the way for the country’s 2011 independence. Herd sizes swelled as politically connected ethnic Dinka transformed the new country’s petrodollars into heads of cattle, further alienating Equatorian communities, who viewed the growing number of armed cattle camps as an occupying force.' + '<div class="spacer"></div>' + 'In 2013, South Sudan fell into a brutal civil war. Equatorian elites initially tried to stay neutral, but some local militias joined the rebels — indeed, many of the rebel forces themselves in Equatoria had evolved out of community militias that had formed in earlier times to resist outside cattle herders. Though a peace deal was struck in 2018, the key insurgent group in Equatoria declined to join. Off-and-on fighting continues, and with it, the feeling of marginalisation.' + '<div class="spacer"></div>' + 'Several presidential directives over the years ordering cattle herders to return to their places of origin have had scant lasting effect. The ad hoc, ineffective nature of these orders highlights the need for a stronger legal framework backed by political dialogue.' + '<div class="spacer"></div>' + 'In light of this history, it is little surprise that Equatorians did not treat Samuel and his fellow travellers as victims of displacements in need of support, but rather as the latest wave of state-backed Dinka intent on roaming their land by force. The ramifications of these clashes are likely to outlast the floods. Militarisation is increasing, both among the herders, defending what they have been able to save, and also among the host communities, defending their lands. As similar reverberations from climate displacement play out across much of the Horn, the region could grow ever more militarised, deadly and brittle.' + '<div class="spacer"></div>' + 'South Sudan exemplifies the compounding forms of instability and violence that, from all climate indications, the rest of the Horn and indeed much of the continent will face.  The failure of wealthy countries to meet their commitments to assist Africa in adapting to climate change deprives government and local communities of a crucial tool to mitigate the violence.',
+            description: '<h2 class="liftout">Last year, tensions spiked in particular around Kajo Keji, amplifying the intense grievances already driving an armed insurgency against the government.' + '<div class="spacer"></div>' + 'This year, tensions have erupted near the South Sudan - Uganda border Magwi, Nimule, pitting national elite against each other.' + '<div class="spacer"></div>' + 'National tensions are rising.</h2>' + 'The South Sudanese conflict dynamic is unusual for the region. It flips the standard script about farmer-herder violence on its head. In South Sudan, the dominant political elite hail from pastoral communities, namely the Dinka and Nuer groups, rather than predominantly farming communities, which historically hold power across much of the post-colonial Sahel. In South Sudan, arms flow directly from the elite in the state security services to the cattle herders on the ground. The predominantly farming communities, on the other hand, have less access to state resources, state power and state guns.' + '<div class="spacer"></div>' + 'Over decades, occasional floods and the allure of better grazing ground, as well as the quiet backing of key political figures, have pushed and pulled ethnic Dinka to Equatoria. Anger at these newcomers for arriving and appropriating local resources without permission has been a unifying theme over generations among the region’s diverse communities , most of which rely heavily on agriculture for their livelihoods.' + '<div class="spacer"></div>' + 'Tensions within South Sudan continued to percolate after the 2005 peace deal that ended a long-running insurgency and paved the way for the country’s 2011 independence. Herd sizes swelled as politically connected ethnic Dinka transformed the new country’s petrodollars into heads of cattle, further alienating Equatorian communities, who viewed the growing number of armed cattle camps as an occupying force.' + '<div class="spacer"></div>' + 'In 2013, South Sudan fell into a brutal civil war. Equatorian elites initially tried to stay neutral, but some local militias joined the rebels — indeed, many of the rebel forces themselves in Equatoria had evolved out of community militias that had formed in earlier times to resist outside cattle herders. Though a peace deal was struck in 2018, the key insurgent group in Equatoria declined to join. Off-and-on fighting continues, and with it, the feeling of marginalisation.' + '<div class="spacer"></div>' + 'Several presidential directives over the years ordering cattle herders to return to their places of origin have had scant lasting effect. The ad hoc, ineffective nature of these orders highlights the need for a stronger legal framework backed by political dialogue.' + '<div class="spacer"></div>' + 'In light of this history, it is little surprise that Equatorians did not treat Samuel and his fellow travellers as victims of displacements in need of support, but rather as the latest wave of state-backed Dinka intent on roaming their land by force. The ramifications of these clashes are likely to outlast the floods. Militarisation is increasing, both among the herders, defending what they have been able to save, and also among the host communities, defending their lands. As similar reverberations from climate displacement play out across much of the Horn, the region could grow ever more militarised, deadly and brittle.' + '<div class="spacer"></div>' + 'South Sudan exemplifies the compounding forms of instability and violence that, from all climate indications, the rest of the Horn and indeed much of the continent will face.  The failure of wealthy countries to meet their commitments to assist Africa in adapting to climate change deprives government and local communities of a crucial tool to mitigate the violence.',
             location: {
-              center: [31.03374, 7.20294],
-              zoom: 6.75,
-              pitch: 40.50,
-              bearing: 12
+              center: [31.42253, 4.25150],
+              zoom: 15,
+              pitch: 44.13,
+              bearing: 0.00,
+              speed: 1.5
             },
             mapAnimation: 'flyTo',
             rotateAnimation: false,
