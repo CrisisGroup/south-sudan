@@ -1,5 +1,5 @@
 var config = {
-    style: 'mapbox://styles/daltonwb/cl8ordedj001m14ntyuauyud1',
+    style: 'mapbox://styles/daltonwb/cl94eitkh001o15mnm7s9tmr1',
     accessToken: 'pk.eyJ1IjoiZGFsdG9ud2IiLCJhIjoiOWdSSXFQSSJ9.HZyjh4g3TAAOAncwelv9Vw',
     showMarkers: false,
     markerColor: '#3FB1CE',
@@ -59,12 +59,12 @@ var config = {
           hidden: false,
           title: ' ',
           image: '',
-          description: 'South Sudan is emblematic of these compound risks, where floods are submerging large swathes of the country and displacing hundreds of thousands. In 2021 alone, over half a million people have been displaced. Humanitarian organization brace for another severe flood season, which has already begun, putting thousands of South Sudanese at the frontline of one of the world’s most overlooked climate disasters. This flooding has also helped drive conflict that has killed dozens (or hundreds?), hundreds of miles to the south.',
+          description: 'South Sudan is emblematic of these compound risks, where floods are submerging large swathes of the country and displacing hundreds of thousands. In 2021 alone, over half a million people have been displaced. Humanitarian organization brace for another severe flood season, which has already begun, putting thousands of South Sudanese at the frontline of one of the world’s most overlooked climate disasters. This flooding has also helped drive conflict that has killed dozens (or hundreds?), hundreds of miles to the south.' + '<h3>Flood Affected People by State</h3><div class="video-container"><iframe src="https://flo.uri.sh/visualisation/11468795/embed" title="Interactive or visual content" class="flourish-embed-iframe" frameborder="0" scrolling="no" sandbox="allow-same-origin allow-forms allow-scripts allow-downloads allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation"></iframe></div>',
           location: {
-            center: [31.03374, 7.20294],
-            zoom: 5.5,
-            pitch: 40.50,
-            bearing: 12,
+            center: [24.27748, 6.34399],
+            zoom: 5.59,
+            pitch: 0.00,
+            bearing: 0.00,
             speed: .4
           },
           mapAnimation: 'flyTo',
@@ -90,6 +90,21 @@ var config = {
               layer: 'country_overview_label',
               duration: 2000,
               opacity: 1
+            },
+            {
+              layer: 'state_lines',
+              duration: 2000,
+              opacity: 1
+            },
+            {
+              layer: 'district_lines',
+              duration: 2000,
+              opacity: .8
+            },
+            {
+              layer: 'state_names',
+              duration: 2000,
+              opacity: 1
             }
           ],
           onChapterExit: [
@@ -101,6 +116,11 @@ var config = {
             {
               layer: 'country_overview_label',
               duration: 4000,
+              opacity: 0
+            },
+            {
+              layer: 'state_names',
+              duration: 2000,
               opacity: 0
             }
         ]
