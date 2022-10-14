@@ -7,7 +7,7 @@ var config = {
     theme: 'light',
     projection: 'globe',
     use3dTerrain: false,
-    title: '<a href="https://www.crisisgroup.org" target="_blank"><img id="icg" src="images/icg-oj.png" /></a><br /><video id="background-video" autoplay loop muted poster="images/poster.jpg"><source src="images/aerial.mp4" type="video/mp4"></video><h1>Floods in South Sudan</h1><p class="hedp">As the world encounters record-breaking droughts, floods and heat extremes, the manifestations of climate change tends to more severely affect the Global South, where it is a main cause of internal displacement. In 2021, 88% of climate displacement occurs in countries with high conflict risk today, which coincide to create a vicious cycle – exacerbating insecurity and imposing major obstacles to humanitarian interventions.</p>' + '<p class="hedp"><strong>The Horn of Africa is acutely susceptible, where climate related displacement, conflict, poor governance and the absence of basic services create a toxic mix of instability and violence.</strong> The outlook is bleak: the Horn currently experiencing several weather hazards simultaneously: from a historic drought in the Eastern Horn, to floods in South Sudan, which are forecasted to continue throughout 2022.</p><a id="freeExplore" href="#INTRO"> BEGIN &nbsp;&nbsp; &#8595; </a><p id="vidcredit">Video: © UNHCR</p>',
+    title: '<a href="https://www.crisisgroup.org" target="_blank"><img id="icg" src="images/icg-oj.png" /></a><br /><video id="background-video" autoplay loop muted poster="images/poster.jpg"><source src="images/aerial.mp4" type="video/mp4"></video><h1>Floods, Displacement and Violence in South Sudan</h1><p class="hedp">Record-breaking droughts, floods and heat extremes are having a severe effect on the Global South, where climate stresses rank among the main drivers of internal displacement. Climate change’s impact on displacement is amplified in fragile contexts, where political instability and poor governance undermine climate resilience and impede humanitarian interventions.</p>' + '<p class="hedp"><strong>A prime example is South Sudan, reeling from its recent civil war, where four consecutive years of historic flooding have exacerbated food and livelihood insecurity, displacing pastoralists south and contributing to violence in the Equatoria region.</p><a id="freeExplore" href="#INTRO"> BEGIN &nbsp;&nbsp; &#8595; </a><p id="vidcredit">Video: © UNHCR</p>',
     subtitle: '',
     byline: '',
     footer: '<h4>Credits</h4><strong>Lead Contributors</strong>: Alan Boswell and Ulrich Eberle<br /><strong>Visualizations & Design</strong>: Paul Franz and Claire Boccon-Gibod<br /><strong>Support</strong>: Carolin Graf and Andrew Ciacci<br /><br /><h4>Data Sources</h4> <div class="data-sources"><a href="https://www.openstreetmap.org" target="_blank">OpenStreetMap</a><br /><a href="https://www.mapbox.com" target="_blank">Mapbox</a> and <a href="https://www.mapbox.com/community" target="_blank">Mapbox Community Team</a><br /><br /><a href="https://www.crisisgroup.org/legal" target="_blank">Privacy Policy & Legal</a></div>',
@@ -16,9 +16,9 @@ var config = {
           id: 'INTRO',
           alignment: 'left',
           hidden: false,
-          title: 'Climate displacement on the rise',
+          title: 'Disaster Internal Displacements in 2021',
           image: '',
-          description: 'As the world encounters record-breaking droughts, floods and heat extremes, the manifestations of climate change tends to more severely affect the Global South, where it is a main cause of internal displacement. In 2021, 88% of climate displacement occurs in countries with high conflict risk today, which coincide to create a vicious cycle – exacerbating insecurity and imposing major obstacles to humanitarian interventions.' + '<div class="spacer"></div>' + 'The Horn of Africa is acutely susceptible, where climate related displacement, conflict, poor governance and the absence of basic services interact to create a toxic mix of instability and violence. And the outlook is bleak: the Horn currently experiencing several weather hazards simultaneously: from a historic drought in the Eastern Horn, to floods in South Sudan, which are forecasted to continue throughout 2022.',
+          description: 'Climatic distress and environmental degradation are increasing the number of internally displaced people around the world. Countries in dark green have the highest numbers. In 2021, 88 per cent of global disaster displacement occurred in countries experiencing conflict and crisis. In some cases, displacement leads to deadly violence, as in the Horn of Africa, where a mix of climate-related displacement, conflict, fragile states, weak governance and the absence of basic services have worsened the region’s instability.' + '<div class="spacer"></div>' + 'The Horn is experiencing several weather hazards simultaneously, including a historic drought in the Eastern Horn and historic floods in South Sudan, both of which are expected to continue through the year.' + '<br /><br />' + '<strong>Rotate the globe by clicking and dragging your pointer, or use the controls in the top right. Throughout this story, you can freely explore the maps where there is a right arrow. &#8594;' + '<br /><br />' + 'Or scroll down to continue. &#8595;</strong>',
           location: {
             center: [25.24688, 3.93630],
             zoom: 2,
@@ -146,11 +146,6 @@ var config = {
                 opacity: 0
               },
               {
-                layer: 'idp-map',
-                duration: 2000,
-                opacity: 0
-              },
-              {
                 layer: 'south_sudan',
                 duration: 4000,
                 opacity: 0
@@ -182,6 +177,11 @@ var config = {
               {
                 layer: 'south_sudan',
                 duration: 4000,
+                opacity: 0
+              },
+              {
+                layer: 'idp-map',
+                duration: 2000,
                 opacity: 0
               }
             ],
@@ -334,37 +334,6 @@ var config = {
               {
                 layer: 'south_sudan',
                 duration: 4000,
-                opacity: 0
-              }
-          ]
-        },
-        {
-            id: '08',
-            alignment: 'center',
-            hidden: false,
-            title: ' ',
-            image: '',
-            description: 'Even typically dry months, like the low-water mark in April, witnessed substantial flooding in 2022. This can be seen in the greater magnitude of flooding between April-June 2022 than in 2020. Crisis Group’s empirical analysis reveals that the unprecedented duration and magnitude of the floods overwhelms local coping mechanism and prevents people from returning to their homes. In certain instances fuelling tensions with host communities.' + '<div class="spacer"></div>' + 'In anticipation of continued catastrophe, UN OCHA released USD 19 million in May 2022 to protect affected regions, including the Bentiu camp for internally displaced people in Unity State.' + '<br /><br /><div class="video-container"><iframe src="comparison.html" frameborder="0" scrolling="no" /></div>',
-            location: {
-              center: [31.03374, 7.20294],
-              zoom: 6,
-              pitch: 40.50,
-              bearing: 12
-            },
-            mapAnimation: 'flyTo',
-            rotateAnimation: false,
-            callback: '',
-            onChapterEnter: [
-              {
-                layer: 'sat-flood',
-                duration: 2000,
-                opacity: .6
-              }
-            ],
-            onChapterExit: [
-              {
-                layer: 'sat-flood',
-                duration: 2000,
                 opacity: 0
               }
           ]
@@ -634,7 +603,7 @@ var config = {
             id: '12',
             alignment: 'left',
             hidden: false,
-            title: 'The crossing',
+            title: '',
             image: '',
             description: 'The trip reached a dangerous climax when Samuel was forced to embark his cattle on boats to cross the river before reaching Juba – which took all night and a day. During the crossing, he vigilant guarded his livestock, as pirates have been known to raid helpless rafters.',
             location: {
