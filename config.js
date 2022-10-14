@@ -1,5 +1,5 @@
 var config = {
-    style: 'mapbox://styles/daltonwb/cl94eitkh001o15mnm7s9tmr1',
+    style: 'mapbox://styles/daltonwb/cl98glq8b000t16usol1t7usr',
     accessToken: 'pk.eyJ1IjoiZGFsdG9ud2IiLCJhIjoiOWdSSXFQSSJ9.HZyjh4g3TAAOAncwelv9Vw',
     showMarkers: false,
     markerColor: '#3FB1CE',
@@ -102,7 +102,7 @@ var config = {
               opacity: .8
             },
             {
-              layer: 'state_names',
+              layer: 'southsudan-states',
               duration: 2000,
               opacity: 1
             }
@@ -119,7 +119,17 @@ var config = {
               opacity: 0
             },
             {
-              layer: 'state_names',
+              layer: 'southsudan-states',
+              duration: 2000,
+              opacity: 0
+            },
+            {
+              layer: 'state_lines',
+              duration: 2000,
+              opacity: 0
+            },
+            {
+              layer: 'district_lines',
               duration: 2000,
               opacity: 0
             }
@@ -778,9 +788,9 @@ var config = {
             id: 'NARRATIVE-1',
             alignment: 'full',
             hidden: false,
-            title: 'The analysis',
+            title: 'Conflict in Equatoria',
             image: '',
-            description: 'Crisis Group has found a direct line between the floods in South Sudan and subsequent deadly violence. Yet a deeper analysis also reveals just how complex that link is, an example of the layered patterns that climate-related violence will likely take in the future.' + '<div class="spacer"></div>' + 'As we have seen elsewhere, the climate displacement in South Sudan is exacerbating existing dynamics rather than creating new ones. The migration, political tensions, and resulting violent conflict are part of a long historical pattern, now accentuated by the floods. This highlights the complex feedback loop that climatic extremes can create in politically unstable areas of the world.' + '<br /><br /' + 'Migration of Dinka from Jonglei to the Equatoria region is not new, nor are communal tensions related to this relocation.' + '<div class="spacer"></div>' + 'Anger at Dinka cattle migration into Equatoria has been a unifying theme for decades among the Equatoria region’s diverse communities, most of which rely heavily on agriculture for their livelihoods.' + '<div class="spacer"></div>' + 'A series of political summits of Equatorian elites over the past couple decades have repeatedly stressed Equatorian grievances over and rejection of the outside cattle migration into their land. Many of these grievances relate to the toxious internal politics of South Sudan’s own violent path to independence.' + '<h3>History of Equatoria-Dinka political tensions</h3><ul><li>1950s Torit rebellion.</li><li>1970s Political tensions rise between Dinka and Equatorian elite.</li><li>1980s SPLM founded, most Equatorian resist</li><li>1990s, Large Dinka migration to some areas of Equatoria amid widespread Equatorian displacement</li></ul>' + '<br />' + 'After the 2005 peace deal, many Equatorians returned home. Some formed new militias to resist incursions by Dinka cattle herders. Most felt marginalised within the new semi-autonomous region. Most Equatorians voted for independence for South Sudan in 2011, but Equatorian political conferences repeated stressed their discontent with the status quo, demand for greater autonomy through a federal political system, and that cattle from outside the region return home.' + '<div class="spacer"></div>' + 'The continued influx of cattle herders remained an iron hot political grievance in Equatoria.' + '<div class="spacer"></div>' + 'After independence, in 2013, South Sudan fell into a brutal civil war. While Equatorian elite initially tried to stay neutral, some Equatorian militias joined the rebels. Most of these rebel forces had early roots as community militias that formed to resist outside cattle herders.' + '<div class="spacer"></div>' + 'In 2018, an insurgent group in Equatoria declined to join the main peace deal, meaning that much of Equatoria now remains an active conflict zone. Many Equatorians continue to believe that they remained sidelined in the peace process and the nation’s politics.' + 'Amid this civil, the Equatorian and Dinka elite continued to clash over Dinka migration into Equatoria. Major influxes of cattle from Jonglei led to presidential directives in TK and TK years for the cattle to leave, to little lasting effect.' + '<div class="spacer"></div>' + 'Equatorians thus viewed the latest influx of cattle herders from Jonglei as just the latest chapter in this long saga.' + '<div class="spacer"></div>' + 'Thus, South Sudan flips several usual narratives about farmer-herder violence on its head.' + '<div class="spacer"></div>' + 'In South Sudan, the political elite hail from pastoral communities, rather than the farming communities. Arms flow directly from the elite in the state security services to the cattle herders on the ground. The farming communities, on the other hand, have less access to state resources, state power, and state guns.' + '<div class="spacer"></div>' + 'Thus, when Samuel headed south from the floods and found himself in clashes, this did not look like climate-related violence to communities on the ground, but as a throughline of a political dispute going back decades.' + '<div class="spacer"></div>' + 'The political rhetoric from Equatorians makes no mention of floods, but rather just the need to defend their land, which they fear will be taken.' + '<h2 class="liftout">Future floods and related displacement could eventually lead to a national political crisis.</h2>' + 'Indeed, a Crisis Group interview with a leading political elder of the Dinka Bor community validates some of the concerns. The retired politician, who is one of the top officials in the ruling party, suggested that the government should allocate “no man’s land” in Equatoria for settlement by Jonglei herders.' + '<div class="spacer"></div>' + 'Equatorian politicians talk of the need to take care of the problem themselves, through force.' + '<div class="spacer"></div>' + 'Both pressure the fractious national government to take their side. Besides the immediate acts of violence, the floods have also increased militarisation – among the herders, forced out of their homes; and among the host communities, who are arming to defend their area from what they see as an malign invasion.' + '<div class="spacer"></div>' + 'Climate-related violence thus strikes twice: in the immediate amplifying effect of the climate disaster on conflicts, but also through the the deleterious effects of militarising at the community level and politicians who seek power through these militias.' + '<div class="spacer"></div>' + 'Such armed mobilisations also empower the politicians and officials who champion these identity and land issues. Over time, this militarisation shifts power to those politicians with militia links. As this plays out across much of the Horn, the region will grow ever more militarised, deadly, and brittle. At a time when rich countries are refusing to meet their commitments to assist Africa in adapting to the climate, South Sudan poses a warning of the kinds of instability that could be down the road: displacement, grievances, conflict over land and resources, and a toxic overlap with violent politics and contested power.',
+            description: 'The South Sudanese conflict dynamic is unusual for the region. It flips the standard script about farmer-herder violence on its head. In South Sudan, the dominant political elite hail from pastoral communities, namely the Dinka and Nuer groups, rather than predominantly farming communities, which historically hold power across much of the post-colonial Sahel. In South Sudan, arms flow directly from the elite in the state security services to the cattle herders on the ground. The predominantly farming communities, on the other hand, have less access to state resources, state power and state guns.' + '<div class="spacer"></div>' + 'Over decades, occasional floods and the allure of better grazing ground, as well as the quiet backing of key political figures, have pushed and pulled ethnic Dinka to Equatoria. Anger at these newcomers for arriving and appropriating local resources without permission has been a unifying theme over generations among the region’s diverse communities , most of which rely heavily on agriculture for their livelihoods.' + '<div class="spacer"></div>' + 'Tensions within South Sudan continued to percolate after the 2005 peace deal that ended a long-running insurgency and paved the way for the country’s 2011 independence. Herd sizes swelled as politically connected ethnic Dinka transformed the new country’s petrodollars into heads of cattle, further alienating Equatorian communities, who viewed the growing number of armed cattle camps as an occupying force.' + '<div class="spacer"></div>' + 'In 2013, South Sudan fell into a brutal civil war. Equatorian elites initially tried to stay neutral, but some local militias joined the rebels — indeed, many of the rebel forces themselves in Equatoria had evolved out of community militias that had formed in earlier times to resist outside cattle herders. Though a peace deal was struck in 2018, the key insurgent group in Equatoria declined to join. Off-and-on fighting continues, and with it, the feeling of marginalisation.' + '<div class="spacer"></div>' + 'Several presidential directives over the years ordering cattle herders to return to their places of origin have had scant lasting effect. The ad hoc, ineffective nature of these orders highlights the need for a stronger legal framework backed by political dialogue.' + '<div class="spacer"></div>' + 'In light of this history, it is little surprise that Equatorians did not treat Samuel and his fellow travellers as victims of displacements in need of support, but rather as the latest wave of state-backed Dinka intent on roaming their land by force. The ramifications of these clashes are likely to outlast the floods. Militarisation is increasing, both among the herders, defending what they have been able to save, and also among the host communities, defending their lands. As similar reverberations from climate displacement play out across much of the Horn, the region could grow ever more militarised, deadly and brittle.' + '<div class="spacer"></div>' + 'South Sudan exemplifies the compounding forms of instability and violence that, from all climate indications, the rest of the Horn and indeed much of the continent will face.  The failure of wealthy countries to meet their commitments to assist Africa in adapting to climate change deprives government and local communities of a crucial tool to mitigate the violence.',
             location: {
               center: [31.03374, 7.20294],
               zoom: 6.75,
@@ -914,6 +924,29 @@ var config = {
                 duration: 2000,
                 opacity: 0
               }
+          ]
+        },
+        {
+            id: 'NARRATIVE-END',
+            alignment: 'full',
+            hidden: false,
+            title: 'Conflict in Equatoria',
+            image: '',
+            description: 'External partners and the United Nations should work with South Sudanese authorities, religious leaders, community elders and others to de-escalate tensions and create security for both displaced and host communities, while protecting the needs of both. This includes the right to safe shelter for the displaced and the rights of host communities in their own land. During years of projected major flooding, such efforts should be augmented to mitigate the potential cascading effects of displacement.' + '<div class="spacer"></div>' + 'Aid agencies should work with the national legislature to craft laws and policies on land rights and protection for the displaced. In addition to legal and administrative steps, authorities should try to ease the political tensions by organising a conference of Jonglei and Equatorian leaders from to agree on basic modalities in the likely event of future displacement, including potential migration corridors, grazing land, timetables for returns, protections for farmers and host communities, and adjudication mechanisms. Though this dialogue will be contentious given the heated politics, the alternative is worsening violence as climate change worsens. Even while treating the climate change’s effects, outside stakeholders should not lose sight of the broader political issues, and re-focus their attention on resolving the conflict in the Equatoria region, including by resuscitating the stalled peace talks in Rome between the South Sudanese government and the Equatoria-based National Salvation Front insurgent group.' + '<div class="spacer"></div>' + 'Aid groups should preposition aid for the displaced and help displaced communities return home. As part of their adaptation funding, rich countries should also offer technical experts to work with national and local South Sudanese authorities on crafting strategies to mitigate the harmful impacts of the flooding while protecting the ecosystems preserving traditional livelihoods that rely on seasonal floods. Donor countries should then offer to fund these flood mitigation strategies, while taking care that the funds do not simply disappear amid the <a href="https://www.crisisgroup.org/africa/horn-africa/south-sudan/305-oil-or-nothing-dealing-south-sudans-bleeding-finances" target="_blank">extreme corruption</a> that characterises South Sudan’s young state.',
+            location: {
+              center: [31.73713, 7.21163],
+              zoom: 5,
+              pitch: 44.00,
+              bearing: 23.20,
+            },
+            mapAnimation: 'flyTo',
+            rotateAnimation: false,
+            callback: '',
+            onChapterEnter: [
+
+            ],
+            onChapterExit: [
+
           ]
         }
     ]
