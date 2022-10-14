@@ -1,5 +1,5 @@
 var config = {
-    style: 'mapbox://styles/daltonwb/cl98glq8b000t16usol1t7usr',
+    style: 'mapbox://styles/daltonwb/cl98hqyaa000s15s1wkwzja6n',
     accessToken: 'pk.eyJ1IjoiZGFsdG9ud2IiLCJhIjoiOWdSSXFQSSJ9.HZyjh4g3TAAOAncwelv9Vw',
     showMarkers: false,
     markerColor: '#3FB1CE',
@@ -61,10 +61,10 @@ var config = {
           image: '',
           description: 'South Sudan is emblematic of these compound risks, where floods are submerging large swathes of the country and displacing hundreds of thousands. In 2021 alone, over half a million people have been displaced. Humanitarian organization brace for another severe flood season, which has already begun, putting thousands of South Sudanese at the frontline of one of the world’s most overlooked climate disasters. This flooding has also helped drive conflict that has killed dozens (or hundreds?), hundreds of miles to the south.' + '<h3>Flood Affected People by State</h3><div class="video-container"><iframe src="https://flo.uri.sh/visualisation/11468795/embed" title="Interactive or visual content" class="flourish-embed-iframe" frameborder="0" scrolling="no" sandbox="allow-same-origin allow-forms allow-scripts allow-downloads allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation"></iframe></div>',
           location: {
-            center: [24.27748, 6.34399],
-            zoom: 5.59,
-            pitch: 0.00,
-            bearing: 0.00,
+            center: [28.21862, 7.51420],
+            zoom: 5.79,
+            pitch: 20.50,
+            bearing: 13.60,
             speed: .4
           },
           mapAnimation: 'flyTo',
