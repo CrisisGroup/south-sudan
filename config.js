@@ -102,11 +102,6 @@ var config = {
               opacity: 1
             },
             {
-              layer: 'district_lines',
-              duration: 2000,
-              opacity: .8
-            },
-            {
               layer: 'southsudan-states',
               duration: 2000,
               opacity: 1
@@ -130,11 +125,6 @@ var config = {
             },
             {
               layer: 'state_lines',
-              duration: 2000,
-              opacity: 0
-            },
-            {
-              layer: 'district_lines',
               duration: 2000,
               opacity: 0
             }
@@ -193,7 +183,7 @@ var config = {
             hidden: false,
             title: '',
             image: '',
-            description: '<div class="padding"><h3 class="white"><span style="background-color: #7e6059; font-size: 24px; font-weight: 600; border-radius: 8px; padding: 5px 10px 5px 10px;">Flood Extent and Internal Displacements in South Sudan</span></h3><h4>Flooding by Area (in km2) vs. Displaced Persons by Year</h4><p>Since 2019, the country has struggled with historic floods, putting persistent pressures on affected communities, driving internal displacement, overwhelming local coping mechanisms and preventing people from returning to their homes.</p></div>' + '<div class="flourish-embed flourish-table" data-src="visualisation/11009243"></div>' + '<br />',
+            description: '<div class="padding"><h3 class="white"><span style="background-color: #7e6059; font-size: 24px; font-weight: 600; border-radius: 8px; padding: 5px 10px 5px 10px;">Flood Extent and Internal Displacements in South Sudan</span></h3><p>Since 2019, the country has struggled with historic floods, putting persistent pressures on affected communities, driving internal displacement, overwhelming local coping mechanisms and preventing people from returning to their homes.</p></div>' + '<div class="flourish-embed flourish-table" data-src="visualisation/11009243"></div>' + '<br />',
             location: {
               center: [31.691412, 7.078249],
               zoom: 7.01,
@@ -228,7 +218,7 @@ var config = {
             id: '03-QUOTE',
             alignment: 'center',
             hidden: false,
-            title: '',
+            title: 'An Anatomy of Persistent Flooding',
             image: '',
             description: '<h2 class="liftout">South Sudan’s exposed floodplains and Nile Basin location render it uniquely susceptible to flooding. In upstream countries, rainfall elevates Lake Victoria and Lake Albert’s water levels, and increases the flow of other sources that feed the White Nile, which amplifies downstream flows. These factors, combined with intensified local precipitation and poor river management, further compound the flood risk in South Sudan.</h2>',
             location: {
@@ -458,7 +448,81 @@ var config = {
             rotateAnimation: false,
             callback: '',
             onChapterEnter: [
-
+              {
+                layer: 'sam1',
+                duration: 1000,
+                opacity: 0
+              },
+              {
+                layer: 'sam2',
+                duration: 2000,
+                opacity: 0
+              },
+              {
+                layer: 'sam3',
+                duration: 3000,
+                opacity: 0
+              },
+              {
+                layer: 'sam4',
+                duration: 4000,
+                opacity: 0
+              },
+              {
+                layer: 'sam5',
+                duration: 5000,
+                opacity: 0
+              },
+              {
+                layer: 'sam6',
+                duration: 5500,
+                opacity: 0
+              },
+              {
+                layer: 'sam7',
+                duration: 6000,
+                opacity: 0
+              },
+              {
+                layer: 'sam_label1',
+                duration: 1000,
+                opacity: 0
+              },
+              {
+                layer: 'sam_label2',
+                duration: 2000,
+                opacity: 0
+              },
+              {
+                layer: 'sam_label3',
+                duration: 3000,
+                opacity: 0
+              },
+              {
+                layer: 'sam_label4',
+                duration: 4000,
+                opacity: 0
+              },
+              {
+                layer: 'sam_label5',
+                duration: 5000,
+                opacity: 0
+              },
+              {
+                layer: 'sam_label6',
+                duration: 5500,
+                opacity: 0
+              },
+              {
+                layer: 'sam_label7',
+                duration: 6000,
+                opacity: 0
+              },
+              {
+                layer: 'road',
+                duration: 1000,
+                opacity: 0
+              }
             ],
             onChapterExit: [
 
@@ -555,7 +619,12 @@ var config = {
           			layer: 'road',
           			duration: 1000,
           			opacity: .4
-          		}
+          		},
+              {
+                layer: 'bor2',
+                duration: 4000,
+                opacity: 0
+              }
             ],
             onChapterExit: [
               {
@@ -641,7 +710,7 @@ var config = {
             hidden: false,
             title: ' ',
             image: '',
-            description: 'Samuel and his group travelled hundreds of miles by foot and boat, losing cattle to disease and bandits along the way. As he journeyed southward toward Bor Town, the Jonglei state capital, deep flood waters forced Samuel’s group to ford the water with their children on their backs and herds in tow.' + '<div class="spacer">' + 'At night Samuel’s party took refuge on higher ground, relatively protected from flood waters.',
+            description: 'Samuel and his group travelled hundreds of miles by foot and boat, losing cattle to disease and bandits along the way. As he journeyed southward toward Bor Town, the Jonglei state capital, deep flood waters forced Samuel’s group to ford the water with their children on their backs and herds in tow.' + '<div class="spacer"></div>' + 'At night Samuel’s party took refuge on higher ground, relatively protected from flood waters.',
             location: {
               center: [31.51148, 6.21925],
               zoom: 14.11,
@@ -666,7 +735,7 @@ var config = {
             onChapterExit: [
               {
                 layer: 'bor2',
-                duration: 4000,
+                duration: 2000,
                 opacity: 0
               }
           ]
@@ -894,11 +963,21 @@ var config = {
                 layer: 'dryness',
                 duration: 2000,
                 opacity: 1
+              },
+              {
+                layer: 'horn-countries',
+                duration: 2000,
+                opacity: 1
               }
             ],
             onChapterExit: [
               {
                 layer: 'dryness',
+                duration: 2000,
+                opacity: 0
+              },
+              {
+                layer: 'horn-countries',
                 duration: 2000,
                 opacity: 0
               }
