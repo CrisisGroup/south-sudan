@@ -64,7 +64,7 @@ var config = {
           hidden: false,
           title: ' ',
           image: '',
-          description: 'South Sudan is emblematic of these compound risks, where floods are submerging large swathes of the country and displacing hundreds of thousands. In 2021 alone, over half a million people have been displaced. Humanitarian organization brace for another severe flood season, which has already begun, putting thousands of South Sudanese at the frontline of one of the world’s most overlooked climate disasters. This flooding has also helped drive conflict that has killed dozens (or hundreds?), hundreds of miles to the south.' + '<div class="video-container"><iframe src="https://flo.uri.sh/visualisation/11468795/embed" title="Interactive or visual content" class="flourish-embed-iframe" frameborder="0" scrolling="no" sandbox="allow-same-origin allow-forms allow-scripts allow-downloads allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation"></iframe></div>',
+          description: 'In South Sudan, unprecedented floods have submerged large swathes of the country and displaced hundreds of thousands of people. In 2021 alone, over half a million people were displaced internally, and this year’s floods, which have just begun, appear to be more severe. Making matters worse, the flooding has helped drive conflict far to the south, in the country’s Equatoria region, where displaced herders and host farming communities are fighting over land resources, killing at least dozens.' + '<div class="video-container"><iframe src="https://flo.uri.sh/visualisation/11468795/embed" title="Interactive or visual content" class="flourish-embed-iframe" frameborder="0" scrolling="no" sandbox="allow-same-origin allow-forms allow-scripts allow-downloads allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation"></iframe></div>',
           location: {
             center: [28.21862, 7.51420],
             zoom: 5.79,
@@ -146,7 +146,7 @@ var config = {
             hidden: false,
             title: ' ',
             image: '',
-            description: 'The flood’s impact was particularly severe in South Sudan’s central region, which witnessed abnormal flood intensity and duration in recent years. At the forefront are states, shown here with high flood intensity are the states Jonglei, Unity and Upper Nile.',
+            description: 'While nearly every state in South Sudan witnessed flooding, the 2021 floods were particularly dire in the country’s centre. The South Sudanese Greater Upper Nile region, comprising Jonglei, Upper Nile and Unity states, were and remain acutely vulnerable. Seasonal flooding is typical in this area, but the extent and duration of these floods in recent years is unprecedented  – with some areas facing inundation twice in the same year.',
             location: {
               center: [31.691412, 7.078249],
               zoom: 6,
@@ -193,7 +193,44 @@ var config = {
             hidden: false,
             title: '',
             image: '',
-            description: '<div class="padding"><h3 class="white"><span style="background-color: #7e6059; font-size: 24px; font-weight: 600; border-radius: 8px; padding: 5px 10px 5px 10px;">Disaster displacement</span></h3><h4>Flooding by Area (in km2) vs. Displaced Persons by Year</h4><p>Since 2020, the country has struggled with historic floods, putting persistent pressures on affected communities, driving internal displacement.</p></div>' + '<div class="flourish-embed flourish-table" data-src="visualisation/11009243"></div>' + '<br />',
+            description: '<div class="padding"><h3 class="white"><span style="background-color: #7e6059; font-size: 24px; font-weight: 600; border-radius: 8px; padding: 5px 10px 5px 10px;">Flood Extent and Internal Displacements in South Sudan</span></h3><h4>Flooding by Area (in km2) vs. Displaced Persons by Year</h4><p>Since 2019, the country has struggled with historic floods, putting persistent pressures on affected communities, driving internal displacement, overwhelming local coping mechanisms and preventing people from returning to their homes.</p></div>' + '<div class="flourish-embed flourish-table" data-src="visualisation/11009243"></div>' + '<br />',
+            location: {
+              center: [31.691412, 7.078249],
+              zoom: 7.01,
+              pitch: 42,
+              bearing: -20.80
+            },
+            mapAnimation: 'flyTo',
+            rotateAnimation: false,
+            callback: '',
+            onChapterEnter: [
+              {
+                layer: 'sat-flood',
+                duration: 2000,
+                opacity: 0
+              },
+              {
+                layer: 'south_sudan',
+                duration: 4000,
+                opacity: 0
+              },
+              {
+                layer: 'idp-map',
+                duration: 2000,
+                opacity: 0
+              }
+            ],
+            onChapterExit: [
+
+          ]
+        },
+        {
+            id: '03-QUOTE',
+            alignment: 'center',
+            hidden: false,
+            title: '',
+            image: '',
+            description: '<h2 class="liftout">South Sudan’s exposed floodplains and Nile Basin location render it uniquely susceptible to flooding. In upstream countries, rainfall elevates Lake Victoria and Lake Albert’s water levels, and increases the flow of other sources that feed the White Nile, which amplifies downstream flows. These factors, combined with intensified local precipitation and poor river management, further compound the flood risk in South Sudan.</h2>',
             location: {
               center: [31.691412, 7.078249],
               zoom: 7.01,
@@ -228,9 +265,9 @@ var config = {
             id: '04',
             alignment: 'right',
             hidden: false,
-            title: 'An anatomy of persistent flooding - Summer 2021',
+            title: 'July to September 2021',
             image: '',
-            description: 'In 2021, starting from a high baseline following the lean season, flood levels increased rapidly during the period of July to September.',
+            description: 'Previous floods have been so severe that waters did not fully recede in the intervening dry seasons. This worsened the next year’s floods and set the stage for rapid inundation during the 2021 rainy season.',
             location: {
               center: [31.03374, 7.20294],
               zoom: 6,
@@ -271,7 +308,7 @@ var config = {
             hidden: false,
             title: 'October to December 2021',
             image: '',
-            description: 'Flood levels peaked in October, reaching their maximal extent across the country, particularly concentrated in South Sudan’s central regions.',
+            description: 'Although annual precipitation usually peaks in August, the floods tend to reach their maximum level in October, particularly in South Sudan’s central regions.',
             location: {
               center: [31.03374, 7.20294],
               zoom: 6,
@@ -300,9 +337,9 @@ var config = {
             id: '06',
             alignment: 'right',
             hidden: false,
-            title: 'Early 2022',
+            title: 'January to March 2022',
             image: '',
-            description: 'Unlike usual years, the floods did not recede by the first months of 2022, which kept areas inaccessible as waters were unable to recede, setting the foundation for another severe flood season ahead.',
+            description: 'Unusually, water did not recede in early 2022. Even typically dry months like March saw substantial flooding,  which keeps some areas inaccessible and prevents wetlands from fully drying out between flood seasons.',
             location: {
               center: [31.03374, 7.20294],
               zoom: 6,
@@ -331,9 +368,9 @@ var config = {
             id: '07',
             alignment: 'right',
             hidden: false,
-            title: 'Spring 2022',
+            title: 'April to June 2022',
             image: '',
-            description: 'With soaked soils unable to retain more water, minimal additional rains over the coming months have the potential to induce further catastrophic flooding.',
+            description: 'With saturated soils unable to retain additional water, even minimal rainfall can cause further catastrophic flooding. Erratic rain between April and June – still months away from the annual flood peak – caught many by surprise in recent years, displacing thousands. Months ahead of this year’s  flood peak, the National Aeronautics and Space Administration and United States Geological Survey forecasts were already drawing a bleak picture of another record-breaking flood season.',
             location: {
               center: [31.03374, 7.20294],
               zoom: 6,
@@ -379,7 +416,7 @@ var config = {
             hidden: false,
             title: ' ',
             image: '',
-            description: 'Here is the same period of comparison in September.' + '<br /><br /><div class="video-container"><iframe src="comparison.html" frameborder="0" scrolling="no" /></div>',
+            description: '<a href="https://www.humanitarianresponse.info/sites/www.humanitarianresponse.info/files/documents/files/south_sudan_flooding_snapshot_no.2_11-oct-2022.pdf" target="_blank">As of October 2022</a>, this season’s floods, which have affected over 900,000 people, are already more expansive than in previous years, and the flooding is expected to worsen before the end of year. As in the past, Unity, Upper Nile, and Jonglei communities were particularly hard hit.  This year, previously spared areas, including Northern Bahr el Ghazal, Warrap, Unity and Western Equatoria states, have also been inundated. Insufficient funding and access limitations have constrained the humanitarian response.' + '<br /><br /><div class="video-container"><iframe src="comparison.html" frameborder="0" scrolling="no" /></div>',
             location: {
               center: [31.03374, 7.20294],
               zoom: 6,
@@ -410,7 +447,7 @@ var config = {
             hidden: false,
             title: '',
             image: '',
-            description: '<h2 class="liftout">Crisis Group tracked herders displaced by floods who later got caught up in violent attacks with the local communities. Many of them have been unable to return home until the floods recede further. <br /><br /><span style="background-color: #E87722; font-weight: 700; border-radius: 8px; padding: 3px 18px 3px 18px;"><em>Herders uprooted by three straight years</em></span> of catastrophic flooding are clashing with populations in the country’s south, who are trying to force them to return home. Heavily armed, the herders moved south from Jonglei, the epicenter of the Nile water floods, to the Equatoria region, where local communities have also formed armed local militias to push out the displaced.</h2>',
+            description: '<h2 class="liftout">Crisis Group has tracked herders displaced by floods who later were involved in violent clashes with local communities.</h2>',
             location: {
               center: [31.03374, 7.20294],
               zoom: 6,
@@ -433,7 +470,7 @@ var config = {
             hidden: false,
             title: '',
             image: 'images/sam_poster.jpg',
-            description: '<p class="photocaption">Old Fangkak, South Sudan - Villagers dig out of flooding that hit the region in March 2022. (Photo: UNCHR)</p>' + '<h3>Sam’s Journey</h3>' + 'The impact of the flooding was witnessed early on and persists today. For instance, the unexpected June 2020 flooding took many by surprise. Among them is Samuel, a cattle herder based with his family around Maar in Jonglei, who were displaced together with over 50 other families and several thousand of cattle.' + '<div class="spacer"></div>' + 'According to interviewees, floods have been cited as a main driver of internal displacement in 2020. Displacement triggers are oftentimes complex and multifaceted, with interviewees frequently also citing insecurity and cattle disease.' + '<div class="spacer"></div>' + 'The flood devastated his community – leaving no pasture for grazing, destroying homes, and killing cattle due to increased water levels and diseases – all of which were compounded by insecurity from raids.',
+            description: '<p class="photocaption">Old Fangkak, South Sudan - Villagers dig out of flooding that hit the region in March 2022. (Photo: UNCHR)</p>' + '<h3>Samuel’s Daunting Journey</h3>' + 'Among those displaced in the unexpected June 2020 flooding was Samuel, who herded cattle near Maar village in Jonglei state. He and his family were displaced with over 50 other families and several thousand heads of cattle.' + '<div class="spacer"></div>' + 'Many factors contributed to their collective decision to flee, among them contemporaneous large-scale violence. But Samuel, in conversation with Crisis Group, laid the blame for his family’s flight on the local floods in the Sudd wetlands.' + '<div class="spacer"></div>' + 'The flood devastated his community, wiping out pasture land, destroying homes and killing cattle. Raids by a neighbouring community, the Murle, further compounded their suffering.',
             location: {
               center: [31.976400, 5.300356],
               zoom: 7.75,
@@ -604,7 +641,7 @@ var config = {
             hidden: false,
             title: ' ',
             image: '',
-            description: 'Samuel and his group travelled hundreds of miles by foot and boat, losing cattle to disease and bandits. As he journeyed southward towards Bor Town, the depth of waters forced Samuel’s group to swim, while carrying children and shepherding the herd. At night Samuel’s party took refuge on higher ground, where flood water were less likely to be a threat.',
+            description: 'Samuel and his group travelled hundreds of miles by foot and boat, losing cattle to disease and bandits along the way. As he journeyed southward toward Bor Town, the Jonglei state capital, deep flood waters forced Samuel’s group to ford the water with their children on their backs and herds in tow.' + '<div class="spacer">' + 'At night Samuel’s party took refuge on higher ground, relatively protected from flood waters.',
             location: {
               center: [31.51148, 6.21925],
               zoom: 14.11,
@@ -640,7 +677,7 @@ var config = {
             hidden: false,
             title: '',
             image: '',
-            description: 'The trip reached a dangerous climax when Samuel was forced to embark his cattle on boats to cross the river before reaching Juba – which took all night and a day. During the crossing, he vigilant guarded his livestock, as pirates have been known to raid helpless rafters.',
+            description: 'Samuel and his group were finally able to load their cattle onto boats, and travelled some 24 hours upriver on the swollen While Nile to Juba, South Sudan’s capital city. Their trip took them into South Sudan’s southern region of Equatoria. Other displaced herders described this part of the journey as especially harrowing, since bandits sometimes attack the boats to raid the cattle.',
             location: {
               center: [31.62268, 4.84110],
               zoom: 16.44,
@@ -665,9 +702,9 @@ var config = {
             id: '13',
             alignment: 'left',
             hidden: false,
-            title: 'The cattle camp: A False Refuge',
+            title: 'The Cattle Camps: A False Refuge',
             image: '',
-            description: 'After crossing the White Nile and arriving in Juba, Samuel and his group disembarked and continued the journey for several days, finally settling in the bushes near other cattle camps that the floods haven’t reached. Samuel explains his decision to settle: “There is no flood here. That is the only reason.” [Other interviewees also cited an improved security situation, better cattle health and pastures as reasons to stay in Equatoria.]',
+            description: 'Samuel and his group continued for several more days beyond Juba, finally settling in the bush near other cattle camps in the Kajo Keji and Yei areas south and southwest of Juba. The entire journey took nearly two weeks. They had escaped the floods but now faced new dangers.',
             location: {
               center: [31.58919, 4.82295],
               zoom: 14.12,
@@ -703,7 +740,7 @@ var config = {
             hidden: false,
             title: ' ',
             image: '',
-            description: 'However, after eluding the floods Samuel found himself in a new form of danger shortly after arrival, as violence erupted after multiple herdsmen were reportedly kidnapped and attacked in cattle camps. Members of Samuel’s group retaliated by destroying the crops and homes of host communities. While Samuel states he was unarmed, most of his fellow herders carried weapons[, as he explains to “(...) to protect our cows.”]' + '<div class="spacer"></div>' + 'Violence between IDPs and host communities is not uncommon. A majority of interviewees reported tensions between displaced herders and host communities, predominantly over land use, destruction caused by cattle and cattle theft, and political grievances, which were usually highest when they were near farms or rebel encampments.',
+            description: 'Samuel soon was caught in escalating tensions between local Equatorian farmers and migrant Dinka herders, of whom he was one. In Kajo Keji county, angry locals kidnapped three of his fellow herders. They were never found and are presumed dead. Samuel suspects that a rebel group, the National Salvation Front (NAS), which refused to sign a 2018 peace deal with the South Sudanese government, was behind the attack.' + '<div class="spacer"></div>' + 'One of the factors driving the insurgency since it formed in 2016 was the repeated waves, over generations, of armed Dinka herders pushing into Equatoria so their cattle could graze its lands. The arrival of Samuel and others like him further fanned the flames of these grievances.',
             location: {
               center: [31.42253, 4.25150],
               zoom: 12.15,
@@ -735,7 +772,7 @@ var config = {
             hidden: false,
             title: '',
             image: '',
-            description: '<div class="video-container"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/0fkDGUJ6N_o" frameBorder="0" scrolling="no" allowfullscreen></iframe></div>',
+            description: '<h2 class="liftout">A couple months later, another pair of attacks injured more members of Samuel’s group. This time, the group retaliated by attacking a nearby village and burning its homes. Not all interaction between the villagers and the new arrivals were hostile. They also established trade relations, and sometimes managed to negotiate peaceful resolutions to some disputes. Still, Samuel’s group faced local anger whenever its cattle destroyed crops and lived in fear of rebel attacks. To avoid those tensions, Samuel and his group move away from the area and deeper into the surrounding bush.</h2>' + '<h2 class="liftout">Samuel’s story is not unique. Last year, tensions between local Equatorians and migrant Dinka herders spiked around Kajo Keji, in Central Equatoria. This year, there has been fighting near the South Sudan-Uganda border in Magwi, in Eastern Equatoria. The wave of additional flood-displaced herders added to these pressures.</h2>' + '<div class="spacer"></div>' + '<div class="video-container"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/0fkDGUJ6N_o" frameBorder="0" scrolling="no" allowfullscreen></iframe></div>',
             location: {
               center: [31.42253, 4.25150],
               zoom: 15,
@@ -772,7 +809,7 @@ var config = {
             hidden: false,
             title: 'Conflict in Equatoria',
             image: '',
-            description: '<h2 class="liftout">Last year, tensions spiked in particular around Kajo Keji, amplifying the intense grievances already driving an armed insurgency against the government.' + '<div class="spacer"></div>' + 'This year, tensions have erupted near the South Sudan - Uganda border Magwi, Nimule, pitting national elite against each other.' + '<div class="spacer"></div>' + 'National tensions are rising.</h2>' + 'The South Sudanese conflict dynamic is unusual for the region. It flips the standard script about farmer-herder violence on its head. In South Sudan, the dominant political elite hail from pastoral communities, namely the Dinka and Nuer groups, rather than predominantly farming communities, which historically hold power across much of the post-colonial Sahel. In South Sudan, arms flow directly from the elite in the state security services to the cattle herders on the ground. The predominantly farming communities, on the other hand, have less access to state resources, state power and state guns.' + '<div class="spacer"></div>' + 'Over decades, occasional floods and the allure of better grazing ground, as well as the quiet backing of key political figures, have pushed and pulled ethnic Dinka to Equatoria. Anger at these newcomers for arriving and appropriating local resources without permission has been a unifying theme over generations among the region’s diverse communities , most of which rely heavily on agriculture for their livelihoods.' + '<div class="spacer"></div>' + 'Tensions within South Sudan continued to percolate after the 2005 peace deal that ended a long-running insurgency and paved the way for the country’s 2011 independence. Herd sizes swelled as politically connected ethnic Dinka transformed the new country’s petrodollars into heads of cattle, further alienating Equatorian communities, who viewed the growing number of armed cattle camps as an occupying force.' + '<div class="spacer"></div>' + 'In 2013, South Sudan fell into a brutal civil war. Equatorian elites initially tried to stay neutral, but some local militias joined the rebels — indeed, many of the rebel forces themselves in Equatoria had evolved out of community militias that had formed in earlier times to resist outside cattle herders. Though a peace deal was struck in 2018, the key insurgent group in Equatoria declined to join. Off-and-on fighting continues, and with it, the feeling of marginalisation.' + '<div class="spacer"></div>' + 'Several presidential directives over the years ordering cattle herders to return to their places of origin have had scant lasting effect. The ad hoc, ineffective nature of these orders highlights the need for a stronger legal framework backed by political dialogue.' + '<div class="spacer"></div>' + 'In light of this history, it is little surprise that Equatorians did not treat Samuel and his fellow travellers as victims of displacements in need of support, but rather as the latest wave of state-backed Dinka intent on roaming their land by force. The ramifications of these clashes are likely to outlast the floods. Militarisation is increasing, both among the herders, defending what they have been able to save, and also among the host communities, defending their lands. As similar reverberations from climate displacement play out across much of the Horn, the region could grow ever more militarised, deadly and brittle.' + '<div class="spacer"></div>' + 'South Sudan exemplifies the compounding forms of instability and violence that, from all climate indications, the rest of the Horn and indeed much of the continent will face.  The failure of wealthy countries to meet their commitments to assist Africa in adapting to climate change deprives government and local communities of a crucial tool to mitigate the violence.',
+            description: 'The South Sudanese conflict dynamic is unusual for the region. It flips the standard script about farmer-herder violence on its head. In South Sudan, the dominant political elite hail from pastoral communities, namely the Dinka and Nuer groups, rather than predominantly farming communities, which historically hold power across much of the post-colonial Sahel. In South Sudan, arms flow directly from the elite in the state security services to the cattle herders on the ground. The predominantly farming communities, on the other hand, have less access to state resources, state power and state guns.' + '<div class="spacer"></div>' + 'Over decades, occasional floods and the allure of better grazing ground, as well as the quiet backing of key political figures, have pushed and pulled ethnic Dinka to Equatoria. Anger at these newcomers for arriving and appropriating local resources without permission has been a unifying theme over generations among the region’s diverse communities , most of which rely heavily on agriculture for their livelihoods.' + '<div class="spacer"></div>' + 'Tensions within South Sudan continued to percolate after the 2005 peace deal that ended a long-running insurgency and paved the way for the country’s 2011 independence. Herd sizes swelled as politically connected ethnic Dinka transformed the new country’s petrodollars into heads of cattle, further alienating Equatorian communities, who viewed the growing number of armed cattle camps as an occupying force.' + '<div class="spacer"></div>' + 'In 2013, South Sudan fell into a brutal civil war. Equatorian elites initially tried to stay neutral, but some local militias joined the rebels — indeed, many of the rebel forces themselves in Equatoria had evolved out of community militias that had formed in earlier times to resist outside cattle herders. Though a peace deal was struck in 2018, the key insurgent group in Equatoria declined to join. Off-and-on fighting continues, and with it, the feeling of marginalisation.' + '<div class="spacer"></div>' + 'Several presidential directives over the years ordering cattle herders to return to their places of origin have had scant lasting effect. The ad hoc, ineffective nature of these orders highlights the need for a stronger legal framework backed by political dialogue.' + '<div class="spacer"></div>' + 'In light of this history, it is little surprise that Equatorians did not treat Samuel and his fellow travellers as victims of displacements in need of support, but rather as the latest wave of state-backed Dinka intent on roaming their land by force. The ramifications of these clashes are likely to outlast the floods. Militarisation is increasing, both among the herders, defending what they have been able to save, and also among the host communities, defending their lands. As similar reverberations from climate displacement play out across much of the Horn, the region could grow ever more militarised, deadly and brittle.' + '<div class="spacer"></div>' + 'South Sudan exemplifies the compounding forms of instability and violence that, from all climate indications, the rest of the Horn and indeed much of the continent will face.  The failure of wealthy countries to meet their commitments to assist Africa in adapting to climate change deprives government and local communities of a crucial tool to mitigate the violence.',
             location: {
               center: [31.42253, 4.25150],
               zoom: 15,
@@ -794,9 +831,9 @@ var config = {
             id: 'END-01',
             alignment: 'left',
             hidden: false,
-            title: 'New Disaster Displacement',
+            title: 'Disaster Internal Displacements in the Horn in 2021',
             image: '',
-            description: 'South Sudan is not an isolated case in the Horn of Africa. Climate and security related internal displacement affect millions of people each year. Yet, humanitarian efforts to alleviate the crisis across the region have fell remarkably short. Most notably, the South Sudan Humanitarian response plan for 2021 fell over half a billion dollars short of what was requested to respond to the crisis',
+            description: 'Climate and security-related internal displacement affect millions of people each year in the Horn.',
             location: {
               center: [39.029264, 7.846526],
               zoom: 5,
@@ -842,7 +879,7 @@ var config = {
             hidden: false,
             title: ' ',
             image: '',
-            description: 'While floods have been an instrumental driver of displacement and conflict in South Sudan, the region is also simultaneously experiencing other forms of climatic distress.' + '<div class="spacer"></div>' + 'Since 2020, much of the eastern Horn of Africa has been marred by below-average rainfall, currently resulting in historic prolonged droughts, which follow the 2019 locust outbreak that strained farmers in the region. The March-May 2022 rainy season was exceptionally dry and there are elevated chances of a fifth drought for the upcoming October-December short wet season.' + '<div class="spacer"></div>' + '<div class="video-container"><iframe src="https://flo.uri.sh/visualisation/11056737/embed" frameborder="0" scrolling="no"></iframe></div>',
+            description: 'While floods have done much to drive displacement and conflict in South Sudan, the region is also simultaneously experiencing other forms of climatic distress.' + '<div class="spacer"></div>' + 'Since 2020, much of the nearby eastern Horn of Africa has endured below-average rainfall  resulting in historic prolonged droughts, on top of the 2019 locust outbreak that strained agriculture in the region. The March-April-May 2022 rainy season was exceptionally dry and there are elevated chances of a fifth drought for the upcoming October-November-December short wet season. Water scarcity brings its own conflict risks.' + '<div class="spacer"></div>' + '<div class="video-container"><iframe src="https://flo.uri.sh/visualisation/11056737/embed" frameborder="0" scrolling="no"></iframe></div>',
             location: {
               center: [31.73713, 7.21163],
               zoom: 5,
@@ -873,7 +910,7 @@ var config = {
             hidden: false,
             title: ' ',
             image: '',
-            description: 'Just as local climate impacts can devolve into national catastrophe across the country, future disputes over resources due to weather and climate hazards have the potential to spiral into regional instability and crises. As global warming increases unabated, weather and climate extremes are likely to become more severe and frequent – bringing with it catastrophic consequences for peace and security.',
+            description: 'The effects of climate change today are felt mainly locally, even if their political ramifications sometimes reverberate at the national level, as in South Sudan. As global warming increases, weather and climate extremes are likely to become more severe and frequent – bringing with it catastrophic consequences for peace and security at greater scale. Rich countries responsible for the bulk of historic carbon emissions could do much more to ease the pain.',
             location: {
               center: [31.73713, 7.21163],
               zoom: 5,
