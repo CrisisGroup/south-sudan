@@ -73,7 +73,7 @@ a:hover, a:visited {
 @media (max-width: 1920px) {
     #header h1 {
         margin: 10% auto 1%;
-        width: 85%;
+        width: 75%;
     }
 }
 
@@ -232,13 +232,13 @@ a:hover, a:visited {
 
 @media (max-width: 1024px) {
     #vidcredit {
-        margin-top: 15%;
+        margin-top: 11%;
     }
 }
 
 @media (max-width: 768px) {
     #vidcredit {
-        margin-top: 12%;
+        margin-top: 3%;
     }
 }
 

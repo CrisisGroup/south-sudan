@@ -1,5 +1,5 @@
 var config = {
-    style: 'mapbox://styles/daltonwb/cl98hqyaa000s15s1wkwzja6n',
+    style: 'mapbox://styles/daltonwb/cl9fq3bs8002z14laiaisgyb3',
     accessToken: 'pk.eyJ1IjoiZGFsdG9ud2IiLCJhIjoiOWdSSXFQSSJ9.HZyjh4g3TAAOAncwelv9Vw',
     showMarkers: false,
     markerColor: '#3FB1CE',
@@ -64,7 +64,7 @@ var config = {
           hidden: false,
           title: ' ',
           image: '',
-          description: 'In South Sudan, unprecedented floods have submerged large swathes of the country and displaced hundreds of thousands of people. In 2021 alone, over half a million people were displaced internally, and this year’s floods, which have just begun, appear to be more severe. Making matters worse, the flooding has helped drive conflict far to the south, in the country’s Equatoria region, where displaced herders and host farming communities are fighting over land resources, killing at least dozens.' + '<div class="video-container"><iframe src="https://flo.uri.sh/visualisation/11468795/embed" title="Interactive or visual content" class="flourish-embed-iframe" frameborder="0" scrolling="no" sandbox="allow-same-origin allow-forms allow-scripts allow-downloads allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation"></iframe></div>',
+          description: 'In South Sudan, unprecedented floods have submerged large swathes of the country and displaced hundreds of thousands of people. In 2021 alone, over half a million people were displaced internally, and this year’s floods, which have just begun, appear to be more severe. Making matters worse, the flooding has helped drive conflict far to the south, in the country’s Equatoria region, where displaced herders and host farming communities are fighting over land resources, killing at least dozens.' + '<h3 class="white"><span style="background-color: #7e6059; font-size: 24px; font-weight: 600; border-radius: 8px; padding: 5px 10px 5px 10px;">Flood Affected People by State</span></h3><div class="video-container"><iframe src="https://flo.uri.sh/visualisation/11468795/embed" title="Interactive or visual content" class="flourish-embed-iframe" frameborder="0" scrolling="no" sandbox="allow-same-origin allow-forms allow-scripts allow-downloads allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation"></iframe></div>',
           location: {
             center: [28.21862, 7.51420],
             zoom: 5.79,
@@ -150,7 +150,7 @@ var config = {
             onChapterEnter: [
               {
                 layer: 'flood-intensity',
-                duration: 3000,
+                duration: 6000,
                 opacity: 1
               },
               {
@@ -216,9 +216,9 @@ var config = {
         },
         {
             id: '03-QUOTE',
-            alignment: 'center',
+            alignment: 'full',
             hidden: false,
-            title: 'An Anatomy of Persistent Flooding',
+            title: '',
             image: '',
             description: '<h2 class="liftout">South Sudan’s exposed floodplains and Nile Basin location render it uniquely susceptible to flooding. In upstream countries, rainfall elevates Lake Victoria and Lake Albert’s water levels, and increases the flow of other sources that feed the White Nile, which amplifies downstream flows. These factors, combined with intensified local precipitation and poor river management, further compound the flood risk in South Sudan.</h2>',
             location: {
@@ -919,24 +919,44 @@ var config = {
                 opacity: 0
               },
               {
-                layer: 'horn_idp',
+                layer: 'horn_idp1',
+                duration: 2000,
+                opacity: 1
+              },
+              {
+                layer: 'horn_idp2',
                 duration: 2000,
                 opacity: 1
               },
               {
                 layer: 'horn-label',
+                duration: 2000,
+                opacity: 1
+              },
+              {
+                layer: 'horn-countries',
                 duration: 2000,
                 opacity: 1
               }
             ],
             onChapterExit: [
               {
-                layer: 'horn_idp',
+                layer: 'horn_idp1',
+                duration: 2000,
+                opacity: 0
+              },
+              {
+                layer: 'horn_idp2',
                 duration: 2000,
                 opacity: 0
               },
               {
                 layer: 'horn-label',
+                duration: 2000,
+                opacity: 0
+              },
+              {
+                layer: 'horn-countries',
                 duration: 2000,
                 opacity: 0
               }
