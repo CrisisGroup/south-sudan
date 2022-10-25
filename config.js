@@ -7,10 +7,10 @@ var config = {
     theme: 'light',
     projection: 'globe',
     use3dTerrain: false,
-    title: '<a href="https://www.crisisgroup.org" target="_blank"><img id="icg" src="images/icg-oj.png" /></a><br /><video id="background-video" autoplay loop muted poster="images/poster.jpg"><source src="images/aerial.mp4" type="video/mp4"></video><h1>Floods, Displacement and Violence in South Sudan</h1><p class="hedp">Record-breaking droughts, floods and heat extremes are having a severe effect on the Global South, where climate stresses rank among the main drivers of internal displacement. Climate change’s impact on displacement is amplified in fragile contexts, where political instability and poor governance undermine climate resilience and impede humanitarian interventions.</p>' + '<p class="hedp"><strong>A prime example is South Sudan, reeling from its recent civil war, where four consecutive years of historic flooding have exacerbated food and livelihood insecurity, displacing pastoralists south and contributing to violence in the Equatoria region.</p><a id="freeExplore" href="#INTRO"> BEGIN &nbsp;&nbsp; &#8595; </a><p id="vidcredit">Video: © UNHCR</p>',
+    title: '<a href="https://www.crisisgroup.org" target="_blank"><img id="icg" src="images/icg-oj.png" /></a><br /><video id="background-video" autoplay loop muted poster="images/poster.jpg"><source src="images/aerial.mp4" type="video/mp4"></video><h1>Floods, Displacement and Violence in South Sudan</h1><p class="hedp">Record-breaking droughts, floods and heat extremes are having a severe effect on the Global South, where climate stresses rank among the main drivers of internal displacement. Climate change’s impact on displacement is amplified in fragile contexts, where political instability and poor governance undermine climate resilience and impede humanitarian interventions.</p>' + '<p class="hedp"><strong>A prime example is South Sudan, reeling from its recent civil war, where four consecutive years of historic flooding have exacerbated food and livelihood insecurity, displacing pastoralists south and contributing to violence in the Equatoria region.</p><a id="freeExplore" href="#INTRO"> BEGIN &nbsp;&nbsp; &#8595; </a><p id="vidcredit">Video: © <a href="https://www.unhcr.org/en-us/news/stories/2022/3/6242bef84/south-sudanese-battle-record-floods-amid-rapidly-changing-climate.html" target="_blank">UNHCR</a></p>',
     subtitle: '',
     byline: '',
-    footer: '<h4>Credits</h4><strong>Lead Contributors</strong>: Alan Boswell and Ulrich Eberle<br /><strong>Visualizations & Design</strong>: Paul Franz and Claire Boccon-Gibod<br /><strong>Support</strong>: Carolin Graf and Andrew Ciacci<br /><br /><h4>Data Sources</h4> <div class="data-sources"><a href="https://www.openstreetmap.org" target="_blank">OpenStreetMap</a><br /><a href="https://www.mapbox.com" target="_blank">Mapbox</a> and <a href="https://www.mapbox.com/community" target="_blank">Mapbox Community Team</a><br /><br /><a href="https://www.crisisgroup.org/legal" target="_blank">Privacy Policy & Legal</a></div>',
+    footer: '<h4>Credits</h4><strong>Lead Contributors</strong>: Ulrich Eberle and Alan Boswell<br /><strong>Visualizations & Design</strong>: Paul Franz and Claire Boccon-Gibod<br /><strong>Support</strong>: Carolin Graf and Andrew Ciacci<br /><br /><h4>Data Sources</h4> <div class="data-sources"><a href="https://www.openstreetmap.org" target="_blank">OpenStreetMap</a><br /><a href="https://www.mapbox.com" target="_blank">Mapbox</a> and <a href="https://www.mapbox.com/community" target="_blank">Mapbox Community Team</a><br /><a href="https://acleddata.com/" target="_blank">ACLED</a>. Raleigh, C., A. Linke, H. Hegre and J. Karlsen. 2010. “Introducing ACLED Armed Conflict Location and Event Data.” Journal of Peace Research. 47(5):651-660.<br /><a href="https://displacement.iom.int/datasets?field_country2_target_id_verf=81&field_component2_target_id=82&field_tag1_target_id=All&created=&created_1=&page=0" target="_blank">Baseline Assessment</a>. South Sudan, Round 11 - IDP and Returnee. 2021. IOM.<br /><a href="https://www.chc.ucsb.edu/data/chirps" target="_blank">CHIRPS</a>. Funk, Chris, et al. 2015. "The Climate Hazards Infrared Precipitation with Stations - A New Environmental Record for Monitoring Extremes." Scientific data. 2.1(2015): 1-21.<br /><a href="https://esgf-node.llnl.gov/search/cmip6/" target="_blank">CMIP</a>. Projected Temperature under SSP2-45 Senario. Accessed via <a href="https://climateknowledgeportal.worldbank.org/" target="_blank">World Bank Climate Change Knowledge Portal</a>.<br /><a href="https://www.internal-displacement.org/database/displacement-data" target="_blank">Disaster Internal Displacement</a>. IDMC.<br /><a href="https://gadm.org/" target="_blank">GADM</a>. 2012. Database of Global Administrative Areas.<br /><a href="https://floodmap.modaps.eosdis.nasa.gov/getTile.php?location=030E010N&day=102&year=2022&product=3" target="_blank">MODIS flood data</a>. 14-day composite. Policelli, F., et al. 2017. "The NASA Global Flood Mapping System." Remote Sensing of Hydrological Extremes. 47-63.<br /><a href="https://www.ssec.wisc.edu/flood-map-demo/flood-products/" target="_blank">VIIRS flood data</a>. 5-day composite. Li, Sanmei, et al. 2018. "Automatic Near Real-Time Flood Detection Using Suomi-NPP/VIIRS Data." Remote Sensing of Environment. 204 (2018): 672-689.<br /><a href="https://reliefweb.int/report/south-sudan/south-sudan-flooding-snapshot-no-2-11-october-2022" target="_blank">UN OCHA</a>. October 2022. “South Sudan: Flooding Snapshot No. 2”.<br /><br /><h4>Research Notes</h4><strong>Flood maps, South Sudan</strong> - Based on VIIRS remotely-sensed flood data, aggregated to the pixel-month level, considering partially and fully flood-affected pixels at a spatial resolution of 375m. Seasonal flood maps show the maximum flood extent over the period of 3 months. The 2021 flood map shows the maximum flood extent throughout 2021.<br /><br /><strong>Flood time trend, South Sudan</strong> - Based on 250m MODIS remotely-sensed flood data, aggregated to the month level for all of South Sudan. <br /><br /><strong>Drought map, Horn of Africa</strong> - The map depicts the precipitation anomalies for the 2022 March-April-May (MAM) rainy season, based on CHIRPS data at a spatial resolution of approximately 5km. Z-scores are considered, comparing the 2022 MAM precipitation average to the MAM average of previous years, 2014-2022. Z-score = (meanMAM 2022 - meanMAM 2014-2022) / (sdMAM 2014-2022 + 0.01). A small value of 0.01 is added to the denominator, to avoid high z-scores in areas with low inter-annual precipitation variability.<br /><br /><strong>Displacement map, South Sudan</strong> - Based on Round 11 - IDP and Returnee dataset of the IOM Baseline Assessment. The number of disaster-related departures (IDPs by origin) is geo-coded and aggregated to the admin 2 level.<br /><br /><strong>Map of land-related conflicts, Horn of Africa</strong> - ACLED fatality count over the period January 2017 to August 2022, aggregated to the month-admin 2 level. Only events classified as “battles”, “riots” or “violence against civilians” are considered. Additionally, events are filtered by a land-related keyword search, based on variable “notes” in ACLED, following the methodology in Eberle, Ulrich J., Dominic Rohner, and Mathias Thoenig. 2020. "Heat and Hate: Climate Security and Farmer-Herder Conflicts in Africa.”<br /><br />The share of countries experiencing conflict and crisis in 2021 is based on CrisisWatch.<br /><br />Interviews were conducted with members of 18 different herding communities.<br /><br /><a href="https://www.crisisgroup.org/legal" target="_blank">Privacy Policy & Legal</a></div>',
     chapters: [
       {
           id: 'INTRO',
@@ -897,72 +897,6 @@ var config = {
           ]
         },
         {
-            id: 'END-01',
-            alignment: 'left',
-            hidden: false,
-            title: 'Disaster Internal Displacements in the Horn in 2021',
-            image: '',
-            description: 'Climate and security-related internal displacement affect millions of people each year in the Horn.',
-            location: {
-              center: [39.029264, 7.846526],
-              zoom: 5,
-              pitch: 42,
-              bearing: -25.6
-            },
-            mapAnimation: 'flyTo',
-            rotateAnimation: false,
-            callback: 'rotateData',
-            onChapterEnter: [
-              {
-                layer: 'satellite',
-                duration: 2000,
-                opacity: 0
-              },
-              {
-                layer: 'horn_idp1',
-                duration: 2000,
-                opacity: 1
-              },
-              {
-                layer: 'horn_idp2',
-                duration: 2000,
-                opacity: 1
-              },
-              {
-                layer: 'horn-label',
-                duration: 2000,
-                opacity: 1
-              },
-              {
-                layer: 'horn-countries',
-                duration: 2000,
-                opacity: 1
-              }
-            ],
-            onChapterExit: [
-              {
-                layer: 'horn_idp1',
-                duration: 2000,
-                opacity: 0
-              },
-              {
-                layer: 'horn_idp2',
-                duration: 2000,
-                opacity: 0
-              },
-              {
-                layer: 'horn-label',
-                duration: 2000,
-                opacity: 0
-              },
-              {
-                layer: 'horn-countries',
-                duration: 2000,
-                opacity: 0
-              }
-          ]
-        },
-        {
             id: 'END-02',
             alignment: 'left',
             hidden: false,
@@ -988,6 +922,16 @@ var config = {
                 layer: 'horn-countries',
                 duration: 2000,
                 opacity: 1
+              },
+              {
+                layer: 'horn-label',
+                duration: 2000,
+                opacity: 1
+              },
+              {
+                layer: 'satellite',
+                duration: 2000,
+                opacity: 0
               }
             ],
             onChapterExit: [
@@ -998,6 +942,11 @@ var config = {
               },
               {
                 layer: 'horn-countries',
+                duration: 2000,
+                opacity: 0
+              },
+              {
+                layer: 'horn-label',
                 duration: 2000,
                 opacity: 0
               }
@@ -1049,7 +998,7 @@ var config = {
             id: 'NARRATIVE-END',
             alignment: 'full',
             hidden: false,
-            title: 'Conflict in Equatoria',
+            title: 'Recommendations',
             image: '',
             description: 'External partners and the United Nations should work with South Sudanese authorities, religious leaders, community elders and others to de-escalate tensions and create security for both displaced and host communities, while protecting the needs of both. This includes the right to safe shelter for the displaced and the rights of host communities in their own land. During years of projected major flooding, such efforts should be augmented to mitigate the potential cascading effects of displacement.' + '<div class="spacer"></div>' + 'Aid agencies should work with the national legislature to craft laws and policies on land rights and protection for the displaced. In addition to legal and administrative steps, authorities should try to ease the political tensions by organising a conference of Jonglei and Equatorian leaders from to agree on basic modalities in the likely event of future displacement, including potential migration corridors, grazing land, timetables for returns, protections for farmers and host communities, and adjudication mechanisms. Though this dialogue will be contentious given the heated politics, the alternative is worsening violence as climate change worsens. Even while treating the climate change’s effects, outside stakeholders should not lose sight of the broader political issues, and re-focus their attention on resolving the conflict in the Equatoria region, including by resuscitating the stalled peace talks in Rome between the South Sudanese government and the Equatoria-based National Salvation Front insurgent group.' + '<div class="spacer"></div>' + 'Aid groups should preposition aid for the displaced and help displaced communities return home. As part of their adaptation funding, rich countries should also offer technical experts to work with national and local South Sudanese authorities on crafting strategies to mitigate the harmful impacts of the flooding while protecting the ecosystems preserving traditional livelihoods that rely on seasonal floods. Donor countries should then offer to fund these flood mitigation strategies, while taking care that the funds do not simply disappear amid the <a href="https://www.crisisgroup.org/africa/horn-africa/south-sudan/305-oil-or-nothing-dealing-south-sudans-bleeding-finances" target="_blank">extreme corruption</a> that characterises South Sudan’s young state.',
             location: {
