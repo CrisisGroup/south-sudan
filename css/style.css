@@ -454,6 +454,17 @@ h5 {
   background-position: 50% 0;
   background-opacity: .1;
   background-size: cover;
+  padding: 5px 0 5px;
+}
+
+p.top-narrative {
+  padding: 2% 35% 0;
+}
+
+@media (max-width: 1920px) {
+  p.top-narrative {
+    padding: 0 30% 0;
+  }
 }
 
 #NARRATIVE-1 .light {
@@ -462,7 +473,13 @@ h5 {
   background-position: 50% 0;
   background-opacity: .1;
   background-size: cover;
-  padding: 5% 20%;
+  padding: 5% 35%;
+}
+
+@media (max-width: 1920px) {
+  #NARRATIVE-1 .light {
+    padding: 5% 30%;
+  }
 }
 
 #NARRATIVE-3 .light {
@@ -484,7 +501,7 @@ h5 {
   background-position: 50% 0;
   background-opacity: .1;
   background-size: cover;
-  padding: 5% 20%;
+  padding: 5% 35%;
 }
 
 #ch10 .light {
