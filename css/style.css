@@ -497,6 +497,10 @@ p.top-narrative {
   padding: 5% 20%;
 }
 
+#NARRATIVE-END .step {
+  opacity: 0.9999 !important;
+}
+
 #NARRATIVE-END {
   padding-bottom: 0 !important;
 }
