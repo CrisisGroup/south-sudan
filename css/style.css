@@ -653,7 +653,7 @@ ul {
 }
 
 .blackshadow {
-    text-shadow: 0 0 4px #000000;
+    text-shadow: 0 0 6px #000000;
 }
 
 .white {
@@ -687,6 +687,13 @@ ul {
 
 .blue {
   background-color: #457d97;
+  border-radius: 8px;
+  padding: 2px 8px 2px 8px;
+  font-weight: bold;
+}
+
+.rain {
+  background-color: #003e51;
   border-radius: 8px;
   padding: 2px 8px 2px 8px;
   font-weight: bold;
