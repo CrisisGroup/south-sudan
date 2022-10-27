@@ -664,6 +664,34 @@ ul {
     margin: 0 0 10px;
 }
 
+.green {
+  background-color: #5a7e71;
+  border-radius: 8px;
+  padding: 2px 8px 2px 8px;
+  font-weight: bold;
+}
+
+.red {
+  background-color: #b65d61;
+  border-radius: 8px;
+  padding: 2px 8px 2px 8px;
+  font-weight: bold;
+}
+
+.oj {
+  background-color: #ed924e;
+  border-radius: 8px;
+  padding: 2px 8px 2px 8px;
+  font-weight: bold;
+}
+
+.blue {
+  background-color: #457d97;
+  border-radius: 8px;
+  padding: 2px 8px 2px 8px;
+  font-weight: bold;
+}
+
 ul.legend-ul {
   padding: 0;
   list-style-type: none;
