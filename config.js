@@ -341,14 +341,14 @@ var config = {
             callback: '',
             onChapterEnter: [
               {
-                layer: 'flood4c',
+                layer: 'flood4d',
                 duration: 2000,
                 opacity: .8
               }
             ],
             onChapterExit: [
               {
-                layer: 'flood4c',
+                layer: 'flood4d',
                 duration: 2000,
                 opacity: 0
               }
@@ -372,7 +372,7 @@ var config = {
             callback: '',
             onChapterEnter: [
               {
-                layer: 'flood4d',
+                layer: 'flood4c',
                 duration: 2000,
                 opacity: .8
               },
@@ -389,7 +389,7 @@ var config = {
             ],
             onChapterExit: [
               {
-                layer: 'flood4d',
+                layer: 'flood4c',
                 duration: 2000,
                 opacity: 0
               },
